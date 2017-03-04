@@ -1,0 +1,58 @@
+include ../abstracts/bemto/bemto.pug
+
+// Header
++b.HEADER.header.container
+  +e.inner
+    // Main nav menu
+    +b.NAV.nav
+      +e.hamburger
+        +b.A.hamburger(href="#")
+          span
+      +e.list-wrapper
+        +e.UL.list
+          +e.item
+            +e.link(href="page.html") О сертификации
+          +e.slash |
+          +e.item
+            +e.link(href="page.html") Услуги
+          +e.slash |
+          +e.item
+            +e.link(href="page-glossary.html") Сертификация продукции
+          +e.slash |
+          +e.item
+            +e.link(href="page-news.html") Новости
+          +e.slash |
+          +e.item
+            +e.link(href="page-contacts.html") Контакты
+    // Logo
+    +b.logo
+      +e.A.img(href="index.html")
+        img(src="img/logo.png", alt="logo", title="logo")
+      +e.P.title Мостест
+      +e.P.description Центр сертификации
+    // City SPb
+    +b.city--spb
+      +e.name-wrapper
+        +e.name Санкт-Петербург
+        +e.UL.dropdown
+          +e.item(data-email0= "spb@mostest.ru", data-email1= "spbspbspb@mostest.ru", data-tel0= "+7 (812) 923-20-03", data-tel1= "+7 (812) 332-93-48") Санкт-Петербург
+          +e.item(data-email0= "16@mostest.ru", data-tel0= "+7 (843) 258-55-24") Казань
+          +e.item(data-email0= "31@mostest.ru", data-tel0= "+7 (919) 285-48-38") Белгород
+      +e.tel-wrapper
+        +e.A.tel(href="tel:+78129232003", target="_blank") +7 (812) 923-20-03
+        +e.A.tel(href="tel:+78123329348", target="_blank") +7 (812) 332-93-48
+      +e.email-wrapper
+        +e.A.email(href="mailto:spb@mostest.ru", target="_blank") spb@mostest.ru
+    // City Msk
+    +b.city--msk
+      +e.name-wrapper
+        +e.name Москва
+      +e.tel-wrapper
+        +e.A.tel(href="tel:+78129232003", target="_blank") +7 (495) 162-09-44
+        +e.A.tel(href="tel:+78123329348", target="_blank") +7 (495) 228-07-40
+      +e.email-wrapper
+        +e.A.email(href="mailto:spb@mostest.ru", target="_blank") info@mostest.ru
+    // Buttons wrapper
+    +e.buttons
+      +b.A.btn--blue(href="page-form-call.html") Заказать звонок с сайта
+      +b.A.btn--yellow(href="page-form-question.html") Задать вопрос эксперту
