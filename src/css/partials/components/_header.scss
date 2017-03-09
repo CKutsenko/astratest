@@ -1,20 +1,12 @@
 .header{
-  padding: 0 50px 20px;
-  background-image: url(../img/header-bg.jpg);
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-  background-size: 100% 100%;
-  outline: 1px solid $white;
-  outline-offset: -5px;
   @include mq($from:xs, $until:lg){
     padding: 0 20px;
   }
 
   &__inner{
-    position: relative;
-    margin: 0 20px;
+    padding: 15px 0;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: no-wrap;
     justify-content: space-between;
     @include mq($from:xs, $until:lg){
       flex-wrap: wrap;
@@ -29,6 +21,13 @@
     @include mq($from:xs, $until:sm){
       justify-content: center;
     }
+  }
+  &__box {
+    flex: 0 0 65%;
+    display: flex;
+    // flex-wrap: no-wrap;
+    justify-content: space-between;
+    flex-direction: column;
   }
   &__buttons{
     flex: 0 0 25%;
@@ -46,9 +45,7 @@
 }
 
 .logo{
-  flex: 0 0 25%;
-  margin-top: -30px;
-  text-align: left;
+  flex: 0 0 35%;
   @include mq($from:xs, $until:lg){
     flex: 0 0 100%;
     margin-top: 0;
@@ -59,41 +56,35 @@
   // }
   &__img{
     display: block;
-    width: 160px;
+    width: 100%;
     height: auto;
     text-align: center;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
     @include mq($from:xs, $until:lg){
       margin: 0 auto;
     }
-  }
-  &__title{
-    margin: 10px 0 0;
-    font-size: $font-size-logo;
-    text-transform: uppercase;
-    font-weight: $bold;
-    letter-spacing: $letter-spacing-logo;
-  }
-  &__description{
-    margin: 5px 0 0;
-    font-size: $font-size-slogan;
-    text-transform: uppercase;
-    font-weight: $regular;
+    img {
+      align-items: flex-start;
+    }
   }
 }
 
 .city{
-  flex: 0 0 25%;
-  max-width: 180px;
-  margin: 15px auto 0;
-  text-align: left;
-  @include mq($from:sm, $until:lg){
-    flex: 0 0 50%;
-    max-width: 50%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding-top: 7px;
+  @include mq($from:xs, $until:lg){
+    flex-direction: column;
     text-align: center;
-  }
-  @include mq($from:xs, $until:sm){
-    flex: 0 0 100%;
-    margin-top: 25px;
   }
   &__name-wrapper{
     position: relative;
@@ -104,7 +95,7 @@
     text-align: left;
     position: absolute;
     z-index: 3;
-    bottom: -10px;
+    bottom: 0px;
     right: 0;
     padding-left: 0;
     margin: 0;
@@ -118,13 +109,12 @@
     padding: 5px 15px;
     @include transition();
     &:hover, &:focus{
-      background-color: $blue-darker;
-      color: $white;
+      // background-color: $blue-darker;
+      // color: $white;
     }
   }
   &__tel{
     display: block;
-    font-size: $font-size-tel;
     color: $text-color;
     font-weight: $semibold;
     margin-bottom: 5px;
@@ -158,6 +148,36 @@
       &:hover, &:focus{
         cursor: pointer;
       }
+    }
+  }
+}
+
+.socials {
+  margin: -3px 0 0 0;
+  padding-left: 0;
+  @include mq($from:xs, $until:lg){
+    margin: 5px 0;
+  }
+  &__item {
+    display: inline-block;
+    padding: 0 10px;
+    &:last-of-type {
+      padding-right: 0;
+    }
+  }
+  &__link {
+    display: block;
+    &--telegram {
+      @include sprite($s-header_telegram);
+    }
+    &--viber {
+      @include sprite($s-header_viber);
+    }
+    &--whatsup {
+      @include sprite($s-header_whatsapp);
+    }
+    &--skype {
+      @include sprite($s-header_skype);
     }
   }
 }

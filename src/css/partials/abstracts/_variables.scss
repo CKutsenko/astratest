@@ -64,12 +64,14 @@ $mq-breakpoints: (
 
 $white:                       #ffffff;
 $black:                       #000000;
+$orange:                      #eb5b29;
+$dark-orange:                 #a42c26;
 
-$blue-darkest:                #2e5d8c;
+// $blue-darkest:                #2e5d8c;
 
-$blue:                        #2d5d8b;
-$blue-darker:                 #275078;
-$blue-btn-shadow:             #294f75;
+// $blue:                        #2d5d8b;
+// $blue-darker:                 #275078;
+// $blue-btn-shadow:             #294f75;
 $yellow:                      #fdc700;
 $yellow-darker:               #e4b300;
 $yellow-btn-shadow:           #cfa300;
@@ -86,8 +88,8 @@ $error-bg:                    lighten($error, 30%);
 $body-bg:                     $white;
 $text-color:                  $black;
 
-$link-color:                  $grey;
-$link-color--hover:           $blue-darkest;
+// $link-color:                  $grey;
+// $link-color--hover:           $blue-darkest;
 
 $text-color-white:            $white;
 $link-color-white:            $text-color-white;
@@ -100,12 +102,15 @@ $link-color-white--hover:     darken($link-color-white, 20%);
 //------------------------------------------------------------------------------
 
 $font-family:                   "nerislight", Arial, sans-serif;
+$font-family-semibold:        "nerissemibold", Arial, sans-serif;
+$font-family-thin:        "neristhin", Arial, sans-serif;
 // $font-family-acrom:             Acrom, Arial, sans-serif;
 //$font-family--serif:          Georgia, "Times New Roman", Times, serif;
 //$font-family--monospace:      Menlo, Monaco, Consolas, "Courier New", monospace;
 
 
-$font-size:                   14px;
+$font-size:                   16px;
+$font-size-nav:               17px;
 $font-size-small:             12px;
 
 $font-size-tel:               18px;

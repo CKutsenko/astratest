@@ -4,7 +4,6 @@
 @include font-face("nerislight", NerisLight, neris-light-webfont);
 @include font-face("nerissemibold", NerisSemibold, neris-semibold-webfont);
 @include font-face("neristhin", NerisThin, neris-thin-webfont);
-@include font-face(Acrom, Acrom, acrom900-webfont);
 
 *,
 *:before,
@@ -27,13 +26,11 @@ body {
 }
 
 a {
-  color: $link-color;
   text-decoration: none;
   @include transition();
 
   &:hover,
   &:focus {
-    color: $link-color--hover;
     // text-decoration: underline;
   }
 }
