@@ -501,18 +501,18 @@ th {
 */
 @font-face {
   font-family: "nerislight";
-  src: url("../fonts/NerisLight/neris-light-webfont.eot"), local("nerislight");
-  src: url("../fonts/NerisLight/neris-light-webfont.eot?#iefix") format("embedded-opentype"), local("nerislight"), url("../fonts/NerisLight/neris-light-webfont.woff") format("woff"), url("../fonts/NerisLight/neris-light-webfont.ttf") format("truetype"), url("../fonts/NerisLight/neris-light-webfont.svg#nerislight") format("svg"); }
+  src: url("../fonts/NerisLight/NerisLight.eot"), local("nerislight");
+  src: url("../fonts/NerisLight/NerisLight.woff") format("woff"), url("../fonts/NerisLight/NerisLight.ttf") format("truetype"); }
 
 @font-face {
   font-family: "nerissemibold";
-  src: url("../fonts/NerisSemibold/neris-semibold-webfont.eot"), local("nerissemibold");
-  src: url("../fonts/NerisSemibold/neris-semibold-webfont.eot?#iefix") format("embedded-opentype"), local("nerissemibold"), url("../fonts/NerisSemibold/neris-semibold-webfont.woff") format("woff"), url("../fonts/NerisSemibold/neris-semibold-webfont.ttf") format("truetype"), url("../fonts/NerisSemibold/neris-semibold-webfont.svg#nerissemibold") format("svg"); }
+  src: url("../fonts/NerisSemibold/NerisSemiBold.eot"), local("nerissemibold");
+  src: url("../fonts/NerisSemibold/NerisSemiBold.woff") format("woff"), url("../fonts/NerisSemibold/NerisSemiBold.ttf") format("truetype"); }
 
 @font-face {
   font-family: "neristhin";
-  src: url("../fonts/NerisThin/neris-thin-webfont.eot"), local("neristhin");
-  src: url("../fonts/NerisThin/neris-thin-webfont.eot?#iefix") format("embedded-opentype"), local("neristhin"), url("../fonts/NerisThin/neris-thin-webfont.woff") format("woff"), url("../fonts/NerisThin/neris-thin-webfont.ttf") format("truetype"), url("../fonts/NerisThin/neris-thin-webfont.svg#neristhin") format("svg"); }
+  src: url("../fonts/NerisThin/NerisThin.eot"), local("neristhin");
+  src: url("../fonts/NerisThin/NerisThin.woff") format("woff"), url("../fonts/NerisThin/NerisThin.ttf") format("truetype"); }
 
 *,
 *:before,
@@ -539,6 +539,9 @@ img {
   max-width: 100%;
   height: auto;
   vertical-align: middle; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
 
 .page {
   margin-top: 60px; }
@@ -1039,7 +1042,8 @@ img {
     margin: 20px 0;
     text-transform: uppercase;
     font-size: 24px;
-    font-family: "nerissemibold", Arial, sans-serif; }
+    font-family: "nerissemibold", Arial, sans-serif;
+    font-weight: normal; }
   .clients__gallery {
     width: 100%;
     margin: 0 auto;
@@ -1216,7 +1220,9 @@ img {
     padding: 30px; }
   .reviews__title {
     font-size: 24px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-weight: normal;
+    font-family: "nerissemibold", Arial, sans-serif; }
   .reviews__slide {
     position: relative;
     z-index: 100;
@@ -1290,16 +1296,6 @@ img {
     @media (min-width: 1280px) {
   .container {
     max-width: 1080px; } }
-    @media screen and (-webkit-min-device-pixel-ratio: 0) {
-  @font-face {
-    font-family: "nerislight";
-    src: url("../fonts/NerisLight/neris-light-webfont.svg#nerislight") format("svg"); }
-  @font-face {
-    font-family: "nerissemibold";
-    src: url("../fonts/NerisSemibold/neris-semibold-webfont.svg#nerissemibold") format("svg"); }
-  @font-face {
-    font-family: "neristhin";
-    src: url("../fonts/NerisThin/neris-thin-webfont.svg#neristhin") format("svg"); } }
     @media (max-width: 63.99em) {
   .page {
     margin: 20px 0 0; }

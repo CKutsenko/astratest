@@ -1,9 +1,9 @@
 //------------------------------------------------------------------------------
 //  Basic styles - global scaffolding
 //------------------------------------------------------------------------------
-@include font-face("nerislight", NerisLight, neris-light-webfont);
-@include font-face("nerissemibold", NerisSemibold, neris-semibold-webfont);
-@include font-face("neristhin", NerisThin, neris-thin-webfont);
+@include font-face("nerislight", NerisLight, NerisLight);
+@include font-face("nerissemibold", NerisSemibold, NerisSemiBold);
+@include font-face("neristhin", NerisThin, NerisThin);
 
 *,
 *:before,
@@ -41,5 +41,8 @@ img {
   vertical-align: middle;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
 
 
