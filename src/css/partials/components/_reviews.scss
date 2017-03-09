@@ -1,0 +1,100 @@
+//Reviews
+
+.reviews {
+  background-color: #f5f6f9;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  &:before {
+    position: absolute;
+    content: '';
+    @include sprite($s-review1);
+    bottom: 10%;
+    right: 7%;
+    @include mq($from:xs, $until:md){
+    display: none;
+    }
+  }
+  &:after {
+    position: absolute;
+    content: '';
+    @include sprite($s-review2);
+    top: 10%;
+    left: 4%;
+    @include mq($from:xs, $until:md){
+    display: none;
+    }
+  }
+  .container {
+    padding: 30px;
+  }
+  &__title {
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+  &__slide {
+    position: relative;
+    z-index: 100;
+    margin: 30px;
+    outline: none;
+    text-align: left;
+    background-color: $white;
+    box-shadow: 3px 3px 5px 0 rgba(183,183,183,1);
+    padding: 30px;
+    line-height: 1.8;
+    font-size: 14px;
+    font-family: $font-family-thin;
+  }
+
+  &__name {
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 10px;
+  }
+
+  .slick-slider {
+    z-index: 100;
+  }
+
+    .slick-arrow{
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background-color: #cdcccc;
+    color: transparent;
+    width: 40px;
+    height: 40px;
+    @include transition();
+    &:hover {
+      background-color: $orange;
+    }
+  }
+  .slick-prev{
+    left: -30px;
+    position: absolute;
+    &:after {
+      position: absolute;
+      content: '';
+      @include sprite($s-arrow-slick);
+      left: 7px;
+      top: 8px;
+      transform: rotate(180deg);
+    }
+  }
+  .slick-next{
+    right: -30px;
+    position: absolute;
+    &:after {
+      position: absolute;
+      content: '';
+      @include sprite($s-arrow-slick);
+      left: 7px;
+      top: 8px;
+    }
+  }
+}

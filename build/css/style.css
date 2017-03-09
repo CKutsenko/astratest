@@ -1188,19 +1188,109 @@ img {
       left: calc(50% - 25px); }
   .advantages__text {
     font-family: "neristhin", Arial, sans-serif; }
-  @media (min-width: 540px) {
+
+.reviews {
+  background-color: #f5f6f9;
+  text-align: center;
+  position: relative;
+  z-index: 1; }
+  .reviews:before {
+    position: absolute;
+    content: '';
+    background-image: url(../img/png-sprite.png);
+    background-position: -366px 0px;
+    width: 147px;
+    height: 150px;
+    bottom: 10%;
+    right: 7%; }
+  .reviews:after {
+    position: absolute;
+    content: '';
+    background-image: url(../img/png-sprite.png);
+    background-position: 0px 0px;
+    width: 365px;
+    height: 294px;
+    top: 10%;
+    left: 4%; }
+  .reviews .container {
+    padding: 30px; }
+  .reviews__title {
+    font-size: 24px;
+    text-transform: uppercase; }
+  .reviews__slide {
+    position: relative;
+    z-index: 100;
+    margin: 30px;
+    outline: none;
+    text-align: left;
+    background-color: #ffffff;
+    box-shadow: 3px 3px 5px 0 #b7b7b7;
+    padding: 30px;
+    line-height: 1.8;
+    font-size: 14px;
+    font-family: "neristhin", Arial, sans-serif; }
+  .reviews__name {
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 10px; }
+  .reviews .slick-slider {
+    z-index: 100; }
+  .reviews .slick-arrow {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    display: block;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background-color: #cdcccc;
+    color: transparent;
+    width: 40px;
+    height: 40px;
+    transition: all 0.325s ease 0s; }
+    .reviews .slick-arrow:hover {
+      background-color: #eb5b29; }
+  .reviews .slick-prev {
+    left: -30px;
+    position: absolute; }
+    .reviews .slick-prev:after {
+      position: absolute;
+      content: '';
+      background-image: url(../img/png-sprite.png);
+      background-position: -151px -295px;
+      width: 24px;
+      height: 22px;
+      left: 7px;
+      top: 8px;
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg); }
+  .reviews .slick-next {
+    right: -30px;
+    position: absolute; }
+    .reviews .slick-next:after {
+      position: absolute;
+      content: '';
+      background-image: url(../img/png-sprite.png);
+      background-position: -151px -295px;
+      width: 24px;
+      height: 22px;
+      left: 7px;
+      top: 8px; }
+    @media (min-width: 540px) {
   .container {
     max-width: 480px; } }
-  @media (min-width: 768px) {
+    @media (min-width: 768px) {
   .container {
     max-width: 760px; } }
-  @media (min-width: 1024px) {
+    @media (min-width: 1024px) {
   .container {
     max-width: 992px; } }
-  @media (min-width: 1280px) {
+    @media (min-width: 1280px) {
   .container {
     max-width: 1080px; } }
-  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    @media screen and (-webkit-min-device-pixel-ratio: 0) {
   @font-face {
     font-family: "nerislight";
     src: url("../fonts/NerisLight/neris-light-webfont.svg#nerislight") format("svg"); }
@@ -1210,7 +1300,7 @@ img {
   @font-face {
     font-family: "neristhin";
     src: url("../fonts/NerisThin/neris-thin-webfont.svg#neristhin") format("svg"); } }
-  @media (max-width: 63.99em) {
+    @media (max-width: 63.99em) {
   .page {
     margin: 20px 0 0; }
   .page__form {
@@ -1290,7 +1380,7 @@ img {
     margin-top: 20px;
     -ms-flex: 0 0 calc(100% - 40px);
     flex: 0 0 calc(100% - 40px); } }
-  @media (max-width: 33.74em) {
+    @media (max-width: 33.74em) {
   .page__form .form-group {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -1307,7 +1397,7 @@ img {
   .header__wrapper {
     -ms-flex-pack: center;
     justify-content: center; } }
-  @media (max-width: 47.99em) {
+    @media (max-width: 47.99em) {
   .page__inner {
     padding: 0 20px; }
   .content {
@@ -1319,8 +1409,12 @@ img {
     padding: 0 20px; }
   .advantages__box {
     -ms-flex: 0 0 100%;
-    flex: 0 0 100%; } }
-  @media (min-width: 48em) and (max-width: 63.99em) {
+    flex: 0 0 100%; }
+  .reviews:before {
+    display: none; }
+  .reviews:after {
+    display: none; } }
+    @media (min-width: 48em) and (max-width: 63.99em) {
   .advantages__box {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%; } }

@@ -126,15 +126,37 @@ jQuery(document).ready(function($){
   });
 
   /* галерея Reviews */
-  $('.reviews__gallery').slick({
-    infinite: true,
-    arrows: true,
-    dots: false,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    centerPadding: '0',
-    variableWidth: true
-  });
+  if ($(window).width() <= 480) {
+    $('.reviews__gallery').slick({
+      infinite: true,
+      arrows: true,
+      dots: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      centerMode: true,
+      centerPadding: '0'
+    });
+  } else if ($(window).width() <= 768) {
+    $('.reviews__gallery').slick({
+      infinite: true,
+      arrows: true,
+      dots: false,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      centerMode: true,
+      centerPadding: '0'
+    });
+  } else {
+    $('.reviews__gallery').slick({
+      infinite: true,
+      arrows: true,
+      dots: false,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      centerMode: true,
+      centerPadding: '0'
+    });
+  }
   /* Gratitude in the modal window */
   $('.reviews__link').click( function(e){
     e.preventDefault();
