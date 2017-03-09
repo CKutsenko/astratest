@@ -1,5 +1,6 @@
-mixin clientSlide(img, alt)
+mixin clientSlide(img, alt, title, text)
   +e.slide
     +e.img
       img(src= "img/clients/" + img alt= alt title= alt)
-  //- можно еще задать width/height, но т.к. изображения в контейнерах, все равно растянутся
+    +e.H3.slide-title #{title}
+    +e.P.text #{text}
