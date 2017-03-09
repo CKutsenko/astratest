@@ -1,18 +1,14 @@
 .form{
   text-align: center;
-  // background-image: linear-gradient(135deg, $yellow 35%, $blue 35%, $blue 75%, $yellow 75%), linear-gradient(135deg, $yellow 35%, $blue 35%, $blue 75%, $yellow 75%);
-  background-repeat: repeat-x, repeat-x;
-  background-position: 0 0, 0 100%;
-  background-size: 60px 10px, 60px 10px;
-  border-right: 1px solid $grey-border;
-  border-left: 1px solid $grey-border;
-  max-width: 500px;
-  margin: 30px auto;
+
+  button {
+    margin-left: 20px;
+    margin-top: 20px;
+  }
 
   &__form{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
   }
   &__title{
     text-align: center;
@@ -31,11 +27,17 @@
     padding: 8px 10px;
     width: 100%;
     border: 1px solid $grey-border;
+    color: $black;
+    margin: 20px 0;
+    background-color: $white;
+    box-shadow:inset 1px 1px 3px 1px rgba(182,182,183,1);
+    outline: transparent;
+    border-radius: 4px;
     &:focus::-webkit-input-placeholder{
-      color: transparent;
+      color: $black;
     }
     &:focus::placeholder{
-      color: transparent;
+      color: $black;
     }
     &--time{
       width: 100px;
@@ -47,6 +49,12 @@
     width: 100%;
     border: 1px solid $grey-border;
     height: 150px;
+    color: $black;
+    background-color: $white;
+    box-shadow:inset 1px 1px 3px 1px rgba(182,182,183,1);
+    resize: none;
+    outline: transparent;
+    border-radius: 4px;
     &:focus::-webkit-input-placeholder{
       color: transparent;
     }
