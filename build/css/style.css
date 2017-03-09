@@ -1109,19 +1109,98 @@ img {
       height: 22px;
       left: 7px;
       top: 8px; }
-    @media (min-width: 540px) {
+
+.advantages {
+  padding: 20px 0;
+  background-image: url(../img/advantage-bgr.jpg);
+  color: #ffffff;
+  background-size: cover;
+  position: relative;
+  text-align: center; }
+  .advantages:after {
+    content: '';
+    position: absolute;
+    background-image: url(../img/shadow.png);
+    height: 21px;
+    width: 100%;
+    bottom: -21px;
+    left: 0;
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .advantages__wrapper {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .advantages__box {
+    -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+    padding: 0 15px; }
+  .advantages__title, .advantages__subtitle {
+    font-family: "nerissemibold", Arial, sans-serif;
+    text-transform: uppercase; }
+  .advantages__title {
+    font-size: 24px; }
+  .advantages__subtitle {
+    font-size: 20px;
+    padding: 100px 0 35px;
+    position: relative; }
+    .advantages__subtitle:after {
+      position: absolute;
+      content: '';
+      height: 3px;
+      width: 40px;
+      background-color: #72a8dd;
+      left: calc(50% - 20px);
+      bottom: 15px; }
+    .advantages__subtitle:before {
+      content: '';
+      position: absolute;
+      top: 20px; }
+    .advantages__subtitle--first:before {
+      background-image: url(../img/png-sprite.png);
+      background-position: -417px -240px;
+      width: 40px;
+      height: 51px;
+      left: calc(50% - 20px); }
+    .advantages__subtitle--second:before {
+      background-image: url(../img/png-sprite.png);
+      background-position: 0px -350px;
+      width: 35px;
+      height: 55px;
+      left: calc(50% - 17px); }
+    .advantages__subtitle--third:before {
+      background-image: url(../img/png-sprite.png);
+      background-position: -418px -188px;
+      width: 51px;
+      height: 48px;
+      left: calc(50% - 25px); }
+    .advantages__subtitle--fourth:before {
+      background-image: url(../img/png-sprite.png);
+      background-position: -366px -240px;
+      width: 50px;
+      height: 52px;
+      left: calc(50% - 25px); }
+  .advantages__text {
+    font-family: "neristhin", Arial, sans-serif; }
+  @media (min-width: 540px) {
   .container {
     max-width: 480px; } }
-    @media (min-width: 768px) {
+  @media (min-width: 768px) {
   .container {
     max-width: 760px; } }
-    @media (min-width: 1024px) {
+  @media (min-width: 1024px) {
   .container {
     max-width: 992px; } }
-    @media (min-width: 1280px) {
+  @media (min-width: 1280px) {
   .container {
     max-width: 1080px; } }
-    @media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
   @font-face {
     font-family: "nerislight";
     src: url("../fonts/NerisLight/neris-light-webfont.svg#nerislight") format("svg"); }
@@ -1131,7 +1210,7 @@ img {
   @font-face {
     font-family: "neristhin";
     src: url("../fonts/NerisThin/neris-thin-webfont.svg#neristhin") format("svg"); } }
-    @media (max-width: 63.99em) {
+  @media (max-width: 63.99em) {
   .page {
     margin: 20px 0 0; }
   .page__form {
@@ -1211,7 +1290,7 @@ img {
     margin-top: 20px;
     -ms-flex: 0 0 calc(100% - 40px);
     flex: 0 0 calc(100% - 40px); } }
-    @media (max-width: 33.74em) {
+  @media (max-width: 33.74em) {
   .page__form .form-group {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -1228,7 +1307,7 @@ img {
   .header__wrapper {
     -ms-flex-pack: center;
     justify-content: center; } }
-    @media (max-width: 47.99em) {
+  @media (max-width: 47.99em) {
   .page__inner {
     padding: 0 20px; }
   .content {
@@ -1237,6 +1316,13 @@ img {
     flex: 0 0 calc(100% - 40px); }
   .content--wide {
     margin: 20px;
-    padding: 0 20px; } }
+    padding: 0 20px; }
+  .advantages__box {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%; } }
+  @media (min-width: 48em) and (max-width: 63.99em) {
+  .advantages__box {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,92 @@
+//Advantages
+.advantages {
+  padding: 20px 0;
+  background-image: url(../img/advantage-bgr.jpg);
+  color: $white;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  &:after {
+    content: '';
+    position: absolute;
+    background-image: url(../img/shadow.png);
+    height: 21px;
+    width: 100%;
+    bottom: -21px;
+    left: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  &__wrapper {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__box {
+    flex: 0 0 25%;
+    padding: 0 15px;
+    @include mq($from:xs, $until:md){
+      flex: 0 0 100%;
+    }
+    @include mq($from:md, $until:lg){
+      flex: 0 0 50%;
+    }
+  }
+  &__title, &__subtitle {
+    font-family: $font-family-semibold;
+    text-transform: uppercase;
+  }
+  &__title {
+    font-size: 24px;
+  }
+  &__subtitle {
+    font-size: 20px;
+    padding: 100px 0 35px;
+    position: relative;
+    &:after {
+      position: absolute;
+      content: '';
+      height: 3px;
+      width: 40px;
+      background-color: #72a8dd;
+      left: calc(50% - 20px);
+      bottom: 15px;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      top: 20px;
+    }
+    &--first {
+      &:before {
+        @include sprite($s-advantage1);
+        left: calc(50% - 20px);
+      }
+    }
+    &--second {
+      &:before {
+        @include sprite($s-advantage2);
+        left: calc(50% - 17px);
+      }
+    }
+    &--third{
+      &:before {
+        @include sprite($s-advantage3);
+        left: calc(50% - 25px);
+      }
+    }
+    &--fourth {
+      &:before {
+        @include sprite($s-advantage4);
+        left: calc(50% - 25px);
+      }
+    }
+  }
+  &__text {
+    font-family: $font-family-thin;
+  }
+}
