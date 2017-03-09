@@ -1,12 +1,31 @@
 include ../abstracts/bemto/bemto.pug
 
 // Footer
-+b.FOOTER.footer.container
-  +e.inner
-    +e.logo
-      a(href="index.html")
-        img(src="../")
-    +b.NAV.nav
++b.FOOTER.footer
+  .container
+    +e.inner
+      +e.logo
+        a(href="index.html")
+          img(src="img/logo-footer.png")
+      +e.UL.nav-list
+        +e.item
+          +e.link(href="page.html") Услуги
+        +e.item
+          +e.link(href="page.html") База кодов
+        +e.item
+          +e.link(href="page-glossary.html") Отзывы
+        +e.item
+          +e.link(href="page-news.html") Новости
+        +e.item
+          +e.link(href="page-contacts.html") Контакты
+      +e.socials
+        +e.UL.list
+          +e.LI.socials-item
+            +e.A.socials-link--vk(href="#")
+          +e.LI.socials-item
+            +e.A.socials-link--fb(href="#")
+          +e.LI.socials-item
+            +e.A.socials-link--gplus(href="#")
 
 +b.overlay
   //- .help-block-success Спасибо! Ваш запрос отправлен специалисту по сертификации
