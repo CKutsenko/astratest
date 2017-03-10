@@ -674,6 +674,17 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto 30px;
   text-align: center; }
 
+.form--call .form-group {
+  margin: 0; }
+
+.form--call .form__input {
+  margin: 12px; }
+
+.form--call .form__title {
+  text-align: left;
+  padding-left: 30px;
+  padding-bottom: 10px; }
+
 .has-success input, .has-success textarea {
   outline: 2px solid #5cb85c;
   box-shadow: none; }
@@ -730,6 +741,20 @@ h1, h2, h3, h4, h5, h6 {
     .btn--orange:hover, .btn--orange:focus, .btn--orange:active {
       background-color: #a42c26; }
     .btn--orange a {
+      color: #ffffff; }
+  .btn--blue {
+    background-color: #4179ae;
+    box-shadow: inset 0 -4px 0 #1f466b;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    padding-bottom: 12px;
+    width: 100%; }
+    .btn--blue:hover, .btn--blue:focus, .btn--blue:active {
+      background-color: #1f466b; }
+    .btn--blue a {
       color: #ffffff; }
 
 .overlay {
@@ -1374,19 +1399,81 @@ h1, h2, h3, h4, h5, h6 {
       background-position: -76px -295px;
       width: 25px;
       height: 26px; }
-    @media (min-width: 540px) {
+
+.promo {
+  background-image: url(../img/form-bgr.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 50px 0;
+  position: relative;
+  background-position: 5% 50%; }
+  .promo:after {
+    content: '';
+    position: absolute;
+    background-image: url(../img/shadow.png);
+    height: 21px;
+    width: 100%;
+    bottom: -20px;
+    left: 0;
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .promo__inner {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-align: center;
+        align-items: center; }
+  .promo__title {
+    font-size: 36px;
+    font-family: "nerissemibold", Arial, sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    line-height: 1.3; }
+  .promo__text {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: "nerissemibold", Arial, sans-serif;
+    margin-bottom: 35px;
+    line-height: 1.5; }
+  .promo__motto {
+    font-size: 24px;
+    font-style: italic;
+    margin-bottom: 0; }
+  .promo__box--wide {
+    -ms-flex: 0 0 58%;
+        flex: 0 0 58%;
+    color: #ffffff;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+  .promo__box--short {
+    -ms-flex: 0 0 30%;
+        flex: 0 0 30%; }
+  @media (min-width: 540px) {
   .container {
     max-width: 480px; } }
-    @media (min-width: 768px) {
+  @media (min-width: 768px) {
   .container {
     max-width: 760px; } }
-    @media (min-width: 1024px) {
+  @media (min-width: 1024px) {
   .container {
     max-width: 992px; } }
-    @media (min-width: 1280px) {
+  @media (min-width: 1280px) {
   .container {
     max-width: 1080px; } }
-    @media (max-width: 63.99em) {
+  @media (max-width: 63.99em) {
   .page {
     margin: 20px 0 0; }
   .page__form {
@@ -1466,7 +1553,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 20px;
     -ms-flex: 0 0 calc(100% - 40px);
     flex: 0 0 calc(100% - 40px); } }
-    @media (max-width: 33.74em) {
+  @media (max-width: 33.74em) {
   .page__form .form-group {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -1487,8 +1574,13 @@ h1, h2, h3, h4, h5, h6 {
     -ms-flex-direction: column;
     flex-direction: column;
     -ms-flex-align: center;
+    align-items: center; }
+  .promo__box {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
     align-items: center; } }
-    @media (max-width: 47.99em) {
+  @media (max-width: 47.99em) {
   .page__inner {
     padding: 0 20px; }
   .content {
@@ -1507,8 +1599,11 @@ h1, h2, h3, h4, h5, h6 {
     display: none; }
   .manager__inner {
     -ms-flex-direction: column;
+    flex-direction: column; }
+  .promo__inner {
+    -ms-flex-direction: column;
     flex-direction: column; } }
-    @media (min-width: 48em) and (max-width: 63.99em) {
+  @media (min-width: 48em) and (max-width: 63.99em) {
   .advantages__box {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%; } }

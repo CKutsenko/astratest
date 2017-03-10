@@ -84,3 +84,17 @@
   margin: 0 auto 30px;
   text-align: center;
 }
+
+.form--call {
+  .form-group {
+    margin: 0;
+  }
+  .form__input {
+    margin: 12px;
+  }
+  .form__title {
+    text-align: left;
+    padding-left: 30px;
+    padding-bottom: 10px;
+  }
+}

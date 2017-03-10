@@ -1,0 +1,15 @@
+include ../abstracts/mixins/_form.pug
+include ../abstracts/bemto/bemto.pug
+
+//Manger
++b.SECTION.promo
+  .container
+    +e.inner
+      +e.box--wide
+        +e.H1.title ЧТО НУЖНО ОФОРМИТЬ:
+          <br> СЕРТИФИКАТ ИЛИ ДЕКЛАРАЦИЮ?
+        +e.P.text ПОМОЖЕМ ПОЛУЧИТЬ ПОЛНЫЙ ПАКЕТ ДОКУМЕНТОВ,
+          <br> НЕОБХОДИМЫЙ ДЛЯ ПРОИЗВОДСТВА  И РЕАЛИЗАЦИИ ПРОДУКЦИИ
+        +e.P.motto Время вашего преимущества - сейчас!
+      +e.box--short
+        +form(call)
