@@ -1,0 +1,182 @@
+.services{
+  text-align: center;
+  padding-bottom: 80px;
+  @include mq($from:xs, $until:lg){
+    padding-bottom: 40px;
+  }
+
+  &__title{
+    font-family: $font-family-semibold;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+  &__switcher{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  &__link{
+    display: block;
+    margin: 0 20px;
+    text-transform: uppercase;
+    position: relative;
+    color: $black;
+    font-family: $font-family-semibold;
+    &:after{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 5px;
+      left: 0;
+      bottom: -5px;
+    }
+    &:hover, &:focus, &:active{
+      &:after{;
+        background-color: $orange;
+      }
+    }
+    &--active{
+      &:after{
+        background-color: $orange;
+      }
+    }
+  }
+}
+
+.services-type{
+  display: none;
+  &:first-of-type{
+    display: block;
+  }
+  &__wrapper--production {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+  }
+  &__wrapper--docks {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+  }
+  &__list{
+    list-style-type: none;
+    &--production {
+      flex: 0 0 30%;
+    }
+    &--docks{
+      flex: 0 0 33.3%;
+    }
+  }
+  &__item-production {
+    padding: 30px 15px 0;
+    position: relative;
+    a {
+      color: $black;
+      @include transition();
+      &:hover {
+        color: $dark-orange;
+      }
+    }
+    &:before {
+      position: absolute;
+      content: '';
+      left: -30px;
+    }
+    &--serv1 {
+      &:before {
+        @include sprite($s-serv1);
+      }
+    }
+    &--serv2 {
+      &:before {
+        @include sprite($s-serv2);
+      }
+    }
+    &--serv3 {
+      &:before {
+        @include sprite($s-serv3);
+      }
+    }
+    &--serv4 {
+      &:before {
+        @include sprite($s-serv4);
+      }
+    }
+    &--serv5 {
+      &:before {
+        @include sprite($s-serv5);
+      }
+    }
+    &--serv6 {
+      &:before {
+        @include sprite($s-serv6);
+      }
+    }
+    &--serv7 {
+      &:before {
+        @include sprite($s-serv7);
+      }
+    }
+    &--serv8 {
+      &:before {
+        @include sprite($s-serv8);
+      }
+    }
+    &--serv9 {
+      &:before {
+        @include sprite($s-serv9);
+      }
+    }
+    &--serv10 {
+      &:before {
+        @include sprite($s-serv10);
+      }
+    }
+    &--serv11 {
+      &:before {
+        @include sprite($s-serv11);
+      }
+    }
+    &--serv12 {
+      &:before {
+        @include sprite($s-serv12);
+      }
+    }
+    &--serv13 {
+      &:before {
+        @include sprite($s-serv13);
+      }
+    }
+    &--serv14 {
+      &:before {
+        @include sprite($s-serv14);
+      }
+    }
+    &--serv15 {
+      &:before {
+        @include sprite($s-serv15);
+      }
+    }
+    &--serv16 {
+      &:before {
+        @include sprite($s-serv16);
+      }
+    }
+    &--serv17 {
+      &:before {
+        @include sprite($s-serv17);
+      }
+    }
+    &--serv18 {
+      &:before {
+        @include sprite($s-serv18);
+      }
+    }
+  }
+}

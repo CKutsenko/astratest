@@ -57,6 +57,7 @@ jQuery(document).ready(function($){
     .show()
     .animate({opacity: 1}, 200);
   });
+
   /* Close the modal window */
   $('.overlay').click( function(){
     $('body').css({"overflow":"auto"});
@@ -67,6 +68,15 @@ jQuery(document).ready(function($){
           $('.overlay').fadeOut(400);
         }
       );
+  });
+
+    /* табы в услугах */
+  $('.services__link').click(function(e) {
+      e.preventDefault();
+      $(this).closest('.services__switcher').find('.services__link').removeClass('services__link--active');
+      $(this).addClass('services__link--active');
+      $(this).closest('.services').find('.services-type').hide();
+      $( $(this.hash) ).show();
   });
 
   /* галерея "с нами уже работают" */

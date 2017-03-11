@@ -1,0 +1,221 @@
+include ../abstracts/bemto/bemto.pug
+
++b.SECTION.services
+  .container
+    +e.H2.title Услуги
+    +e.switcher
+      +e.A.link--docs.--active(href="#services-docs") сертификация по документам
+      +e.A.link--production(href="#services-production") сертификация по продукции
+
+    +e.content
+
+      +b.services-type--docs(id='services-docs')
+        +e.wrapper--docks
+
+          //First col
+          +e.UL.list--docks
+            +e.LI.item--docks
+              a(href="page.html") Пожарная сертификация
+              +e.UL.sublist-docs
+                +e.LI.subitem-docks
+                  a(href="page.html") Сертификат пожарной безопасности
+                +e.LI.subitem-docks
+                  a(href="page.html") Декларация пожарнй безопасности
+                +e.LI.subitem-docks
+                  a(href="page.html") Добровольный пожарный сертификат
+
+            +e.LI.item--docks
+              a(href="page.html") Сертификация систем менеджмента
+              +e.UL.sublist-docs
+                +e.LI.subitem-docks
+                  a(href="page.html") Сертификат ISO 9001
+                +e.LI.subitem-docks
+                  a(href="page.html") Сертификат ISO 14001
+                +e.LI.subitem-docks
+                  a(href="page.html") Сертификат OHSAS 18001
+                +e.LI.subitem-docks
+                  a(href="page.html") Сертификат ISO 22000 (HACCP)
+                +e.LI.subitem-docks
+                  a(href="page.html") Интегрированная система менеджмента
+                +e.LI.subitem-docks
+                  a(href="page.html") Разработка документации
+                +e.LI.subitem-docks
+                  a(href="page.html") Внедрение систем менеджмента
+
+            +e.LI.item--docks
+              a(href="page.html") Система сертификации ГОСТ Р
+              +e.UL.sublist-docs
+                +e.LI.subitem-docks
+                  a(href="page.html") Обязательный сертификат соответствия
+                +e.LI.subitem-docks
+                  a(href="page.html") Декларация о соответствии
+                +e.LI.subitem-docks
+                  a(href="page.html") Добровольный сертификат соответствия
+                +e.LI.subitem-docks
+                  a(href="page.html") Сертификация услуг
+
+            +e.LI.item--docks
+              a(href="page.html") Сертификаты происхождения  Торгово-Промышленной палаты
+              +e.UL.sublist-docs
+                +e.LI.subitem-docks
+                  a(href="page.html") Сертификат происхождения ст-1
+                +e.LI.subitem-docks
+                  a(href="page.html") Сертификат происхождения для гос. закупок
+                +e.LI.subitem-docks
+                  a(href="page.html") Сертификат происхождения общей формы
+
+            +e.LI.item--docks
+              a(href="page.html") Экологические сертификаты
+
+          //Second col
+          +e.UL.list--docks
+            +e.LI.item--docks
+              a(href="page.html") Подтверждение соответствия ТР ТС
+              +e.UL.sublist-docs
+                +e.LI.subitem-docks
+                  a(href="page.html") Сертификат ТР ТС
+                +e.LI.subitem-docks
+                  a(href="page.html") Декларация ТР ТС
+
+            +e.LI.item--docks
+              a(href="page.html") Сертификация транспортных средств
+              +e.UL.sublist-docs
+                +e.LI.subitem-docks
+                  a(href="page.html") Свидетельство о безопасности конструкции транспортного средства (СБКТС)
+
+            +e.LI.item--docks
+              a(href="page.html") Санитарно-эпидемиологический надзор и фитосанитарный надзор
+              +e.UL.sublist-docs
+                +e.LI.subitem-docks
+                  a(href="page.html") Свидетельство о гос. регистрации (СГР)
+                +e.LI.subitem-docks
+                  a(href="page.html") Экспертное заключение
+                +e.LI.subitem-docks
+                  a(href="page.html") Фитосанитарный сертификат
+
+            +e.LI.item--docks
+              a(href="page.html") Разработка нормативно-технической и конструкторской документации
+              +e.UL.sublist-docs
+                +e.LI.subitem-docks
+                  a(href="page.html") Разработка технических условий (ТУ)
+                +e.LI.subitem-docks
+                  a(href="page.html") Регистрация технических  условий
+                +e.LI.subitem-docks
+                  a(href="page.html") Разработка стандарта организации (СТО)
+                +e.LI.subitem-docks
+                  a(href="page.html") Паспорт безопасности MSDS
+                +e.LI.subitem-docks
+                  a(href="page.html") Паспорт изделия
+                +e.LI.subitem-docks
+                  a(href="page.html") Фитосанитарный сертификат
+                  a(href="page.html") Руководство по эксплуатации
+                +e.LI.subitem-docks
+                  a(href="page.html") Технологический регламент
+                +e.LI.subitem-docks
+                  a(href="page.html") Программа производственного контроля
+                +e.LI.subitem-docks
+                  a(href="page.html") Расчеты пищевой и энергетической ценности
+                +e.LI.subitem-docks
+                  a(href="page.html") Обоснование безопасности
+
+          //Third col
+          +e.UL.list--docks
+            +e.LI.item--docks
+              a(href="page.html") Система добровольной сертификации ЕАС
+              +e.UL.sublist-docs
+                +e.LI.subitem-docks
+                  a(href="page.html") Сертификация услуг
+                +e.LI.subitem-docks
+                  a(href="page.html") Сертификация систем менеджмента качества
+
+            +e.LI.item--docks
+              a(href="page.html") Сертификация радиоэлектронных средств, высокочастотных устройств и шифровальных средствСистема добровольной сертификации ЕАС
+              +e.UL.sublist-docs
+                +e.LI.subitem-docks
+                  a(href="page.html") Нотификация ФСБ
+                +e.LI.subitem-docks
+                  a(href="page.html") Лицензия Минпромторга
+                +e.LI.subitem-docks
+                  a(href="page.html") Заключение Радиочастотного центра (РЧЦ)
+                +e.LI.subitem-docks
+                  a(href="page.html") Декларация Минсвзязи
+
+            +e.LI.item--docks
+              a(href="page.html") Отказные письма
+              +e.UL.sublist-docs
+                +e.LI.subitem-docks
+                  a(href="page.html") Для торговли/для таможни
+                +e.LI.subitem-docks
+                  a(href="page.html") По пожарной безопасности
+                +e.LI.subitem-docks
+                  a(href="page.html") По санитарно-эпидемиологическим нормам
+                +e.LI.subitem-docks
+                  a(href="page.html") Отказное для ПО  Нотификация ФСБ
+
+            +e.LI.item--docks
+              a(href="page.html") Прочие услуги
+              +e.UL.sublist-docs
+                +e.LI.subitem-docks
+                  a(href="page.html") Разработка этикеток продукции
+                +e.LI.subitem-docks
+                  a(href="page.html") Присвоение штрих-кодов
+                +e.LI.subitem-docks
+                  a(href="page.html") Допуск СРО
+                +e.LI.subitem-docks
+                  a(href="page.html") Экспертиза промышленной безопасности
+                +e.LI.subitem-docks
+                  a(href="page.html") Озоновое заключение
+                +e.LI.subitem-docks
+                  a(href="page.html") Заключение о спиртосодержании
+                  a(href="page.html") Заключение об отсутствии ГМО
+                +e.LI.subitem-docks
+                  a(href="page.html") Регистрационное удостоверение Росздравнадзора
+                +e.LI.subitem-docks
+                  a(href="page.html") Заключение эксконт
+                +e.LI.subitem-docks
+                  a(href="page.html") Специальная оценка условий труда  Разработка технических условий (ТУ)
+
+
+      +b.services-type--production(id='services-production')
+        +e.wrapper--production
+          +e.UL.list--production
+            +e.LI.item-production--serv1
+              a(href='#') Легкая промышленность
+            +e.LI.item-production--serv2
+              a(href='#') Промышленное оборудование
+            +e.LI.item-production--serv3
+              a(href='#') Пищевая продукция
+            +e.LI.item-production--serv4
+              a(href='#') Игрушки
+            +e.LI.item-production--serv5
+              a(href='#') Запчасти автомобиля
+            +e.LI.item-production--serv6
+              a(href='#') Товары для детей
+          +e.UL.list--production
+            +e.LI.item-production--serv7
+              a(href='#') Бытовая химия
+            +e.LI.item-production--serv8
+              a(href='#') Упаковка
+            +e.LI.item-production--serv9
+              a(href='#') Световое оборудование
+            +e.LI.item-production--serv10
+              a(href='#') Бытовая техника
+            +e.LI.item-production--serv11
+              a(href='#') Смазочные материалы и масла
+            +e.LI.item-production--serv12
+             a(href='#') Строительные материалы
+          +e.UL.list--production
+            +e.LI.item-production--serv13
+              a(href='#') Обувь
+            +e.LI.item-production--serv14
+              a(href='#') Косметика
+            +e.LI.item-production--serv15
+              a(href='#') Мебель
+            +e.LI.item-production--serv16
+              a(href='#') БАДы
+            +e.LI.item-production--serv17
+              a(href='#') Алкоголь
+            +e.LI.item-production--serv18
+              a(href='#') СИЗ
+
+
