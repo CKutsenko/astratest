@@ -1770,6 +1770,9 @@ h1, h2, h3, h4, h5, h6 {
   .header__wrapper {
     -ms-flex-pack: center;
     justify-content: center; }
+  .reviews__slide {
+    padding: 10px 5px;
+    margin: 10px; }
   .manager__box {
     -ms-flex-direction: column;
     flex-direction: column;

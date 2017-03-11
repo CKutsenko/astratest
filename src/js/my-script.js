@@ -83,7 +83,7 @@ jQuery(document).ready(function($){
   if ($(window).width() <= 480) {
     $('.clients__gallery').slick({
       infinite: true,
-      arrows: true,
+      arrows: false,
       dots: false,
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -139,7 +139,7 @@ jQuery(document).ready(function($){
   if ($(window).width() <= 480) {
     $('.reviews__gallery').slick({
       infinite: true,
-      arrows: true,
+      arrows: false,
       dots: false,
       slidesToShow: 1,
       slidesToScroll: 1,
