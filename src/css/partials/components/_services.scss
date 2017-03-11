@@ -1,9 +1,6 @@
 .services{
   text-align: center;
-  padding-bottom: 80px;
-  @include mq($from:xs, $until:lg){
-    padding-bottom: 40px;
-  }
+  padding: 25px 0;
 
   &__title{
     font-family: $font-family-semibold;
@@ -14,6 +11,9 @@
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+    @include mq($from:xs, $until:md){
+      flex-direction: column;
+    }
   }
   &__link{
     display: block;
@@ -22,6 +22,10 @@
     position: relative;
     color: $black;
     font-family: $font-family-semibold;
+    border: 2px solid transparent;
+    @include mq($from:xs, $until:md){
+      margin-bottom: 5px;
+    }
     &:after{
       content: '';
       position: absolute;
@@ -34,10 +38,24 @@
       &:after{;
         background-color: $orange;
       }
+      @include mq($from:xs, $until:md){
+        border: 2px solid $orange;
+        border-radius: 10px;
+        &:after {
+          display: none;
+        }
+      }
     }
     &--active{
       &:after{
         background-color: $orange;
+      }
+      @include mq($from:xs, $until:md){
+        border: 2px solid $orange;
+        border-radius: 10px;
+        &:after {
+          display: none;
+        }
       }
     }
   }
@@ -56,6 +74,9 @@
     display: flex;
     text-align: left;
     justify-content: center;
+    @include mq($from:xs, $until:md){
+      flex-direction: column;
+    }
   }
   &__wrapper--docks {
     display: -webkit-flex;
@@ -63,6 +84,11 @@
     display: -ms-flex;
     display: -o-flex;
     display: flex;
+    text-align: left;
+    padding-top: 15px;
+    @include mq($from:xs, $until:md){
+      flex-direction: column;
+    }
   }
   &__list{
     list-style-type: none;
@@ -176,6 +202,49 @@
     &--serv18 {
       &:before {
         @include sprite($s-serv18);
+      }
+    }
+  }
+  &__item--docks {
+    text-align: left;
+    font-family: $font-family-semibold;
+    color: $orange;
+    font-size: 18px;
+    padding-left: 15px;
+    position: relative;
+    padding-bottom: 25px;
+    > a {
+      color: $orange;
+      margin-bottom: 15px;
+      display: block;
+      @include transition();
+      &:hover {
+        color: $dark-orange;
+      }
+    }
+    &:before {
+      position: absolute;
+      content: '';
+      height: 6px;
+      width: 6px;
+      border-radius: 50%;
+      background-color: $orange;
+      left: 0;
+      top: 12px;
+    }
+  }
+  &__sublist-docs {
+    font-size: 16px;
+    font-family: $font-family;
+    padding-left: 0;
+  }
+  &__subitem-docks {
+    list-style-type: none;
+    > a {
+      color: $black;
+      @include transition();
+      &:hover {
+        text-decoration: underline;
       }
     }
   }

@@ -1464,7 +1464,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .services {
   text-align: center;
-  padding-bottom: 80px; }
+  padding: 25px 0; }
   .services__title {
     font-family: "nerissemibold", Arial, sans-serif;
     font-size: 24px;
@@ -1481,7 +1481,8 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     position: relative;
     color: #000000;
-    font-family: "nerissemibold", Arial, sans-serif; }
+    font-family: "nerissemibold", Arial, sans-serif;
+    border: 2px solid transparent; }
     .services__link:after {
       content: '';
       position: absolute;
@@ -1512,7 +1513,9 @@ h1, h2, h3, h4, h5, h6 {
     display: -ms-flex;
     display: -o-flex;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    text-align: left;
+    padding-top: 15px; }
   .services-type__list {
     list-style-type: none; }
     .services-type__list--production {
@@ -1623,19 +1626,54 @@ h1, h2, h3, h4, h5, h6 {
       background-position: -446px -151px;
       width: 31px;
       height: 27px; }
-    @media (min-width: 540px) {
+  .services-type__item--docks {
+    text-align: left;
+    font-family: "nerissemibold", Arial, sans-serif;
+    color: #eb5b29;
+    font-size: 18px;
+    padding-left: 15px;
+    position: relative;
+    padding-bottom: 25px; }
+    .services-type__item--docks > a {
+      color: #eb5b29;
+      margin-bottom: 15px;
+      display: block;
+      transition: all 0.325s ease 0s; }
+      .services-type__item--docks > a:hover {
+        color: #a42c26; }
+    .services-type__item--docks:before {
+      position: absolute;
+      content: '';
+      height: 6px;
+      width: 6px;
+      border-radius: 50%;
+      background-color: #eb5b29;
+      left: 0;
+      top: 12px; }
+  .services-type__sublist-docs {
+    font-size: 16px;
+    font-family: "nerislight", Arial, sans-serif;
+    padding-left: 0; }
+  .services-type__subitem-docks {
+    list-style-type: none; }
+    .services-type__subitem-docks > a {
+      color: #000000;
+      transition: all 0.325s ease 0s; }
+      .services-type__subitem-docks > a:hover {
+        text-decoration: underline; }
+      @media (min-width: 540px) {
   .container {
     max-width: 480px; } }
-    @media (min-width: 768px) {
+      @media (min-width: 768px) {
   .container {
     max-width: 760px; } }
-    @media (min-width: 1024px) {
+      @media (min-width: 1024px) {
   .container {
     max-width: 992px; } }
-    @media (min-width: 1280px) {
+      @media (min-width: 1280px) {
   .container {
     max-width: 1080px; } }
-    @media (max-width: 63.99em) {
+      @media (max-width: 63.99em) {
   .page {
     margin: 20px 0 0; }
   .page__form {
@@ -1714,10 +1752,8 @@ h1, h2, h3, h4, h5, h6 {
   .content--half {
     margin-top: 20px;
     -ms-flex: 0 0 calc(100% - 40px);
-    flex: 0 0 calc(100% - 40px); }
-  .services {
-    padding-bottom: 40px; } }
-    @media (max-width: 33.74em) {
+    flex: 0 0 calc(100% - 40px); } }
+      @media (max-width: 33.74em) {
   .page__form .form-group {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -1744,7 +1780,7 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     -ms-flex-align: center;
     align-items: center; } }
-    @media (max-width: 47.99em) {
+      @media (max-width: 47.99em) {
   .page__inner {
     padding: 0 20px; }
   .content {
@@ -1766,8 +1802,29 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column; }
   .promo__inner {
     -ms-flex-direction: column;
+    flex-direction: column; }
+  .services__switcher {
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .services__link {
+    margin-bottom: 5px; }
+  .services__link:hover, .services__link:focus, .services__link:active {
+    border: 2px solid #eb5b29;
+    border-radius: 10px; }
+  .services__link:hover:after, .services__link:focus:after, .services__link:active:after {
+    display: none; }
+  .services__link--active {
+    border: 2px solid #eb5b29;
+    border-radius: 10px; }
+  .services__link--active:after {
+    display: none; }
+  .services-type__wrapper--production {
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .services-type__wrapper--docks {
+    -ms-flex-direction: column;
     flex-direction: column; } }
-    @media (min-width: 48em) and (max-width: 63.99em) {
+      @media (min-width: 48em) and (max-width: 63.99em) {
   .advantages__box {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%; } }
