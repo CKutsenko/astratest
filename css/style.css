@@ -722,7 +722,6 @@ h1, h2, h3, h4, h5, h6 {
 .btn {
   display: inline-block;
   vertical-align: middle;
-  white-space: nowrap;
   border-radius: 10px;
   font-family: "nerissemibold", Arial, sans-serif;
   outline: none;
@@ -744,9 +743,15 @@ h1, h2, h3, h4, h5, h6 {
       color: #ffffff; }
   .btn--border {
     border: 2px solid #eb5b29;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    transition: all 0.325s ease 0s; }
+    .btn--border:hover {
+      border: 2px solid #a42c26; }
     .btn--border a {
-      color: #eb5b29; }
+      color: #eb5b29;
+      transition: all 0.325s ease 0s; }
+      .btn--border a:hover {
+        color: #a42c26; }
   .btn--work {
     margin-left: 65px;
     margin-bottom: 80px; }
@@ -1869,6 +1874,10 @@ h1, h2, h3, h4, h5, h6 {
   .reviews__slide {
     padding: 10px 5px;
     margin: 10px; }
+  .promo__box--short {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 280px; }
   .promo__box {
     -ms-flex-direction: column;
     flex-direction: column;
@@ -1877,6 +1886,11 @@ h1, h2, h3, h4, h5, h6 {
     @media (max-width: 47.99em) {
   .page__inner {
     padding: 0 20px; }
+  .btn {
+    text-align: center; }
+  .btn--work {
+    margin-left: 10px;
+    margin-bottom: 20px; }
   .content {
     margin: 20px;
     -ms-flex: 0 0 calc(100% - 40px);
@@ -1891,9 +1905,23 @@ h1, h2, h3, h4, h5, h6 {
     display: none; }
   .reviews:after {
     display: none; }
+  .promo {
+    background-image: none;
+    background-color: #3e75a9; }
   .promo__inner {
     -ms-flex-direction: column;
     flex-direction: column; }
+  .promo__title {
+    font-size: 24px;
+    margin-bottom: 20px; }
+  .promo__text {
+    font-size: 16px;
+    margin-bottom: 20px; }
+  .promo__motto {
+    font-size: 16px; }
+  .promo__box--wide {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%; }
   .services__switcher {
     -ms-flex-direction: column;
     flex-direction: column; }
@@ -1922,7 +1950,24 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column; }
   .work__box {
     -ms-flex: 0 0 100%;
-    flex: 0 0 100%; } }
+    flex: 0 0 100%; }
+  .work__title {
+    padding-left: 10px; }
+  .work__title:before {
+    left: 10px; }
+  .work__text {
+    padding: 10px;
+    font-size: 16px; }
+  .work__list {
+    padding: 10px;
+    text-align: center; }
+  .work__item {
+    padding-bottom: 50px; }
+  .work__item:before {
+    display: none; }
+  .work__item:after {
+    left: 50%;
+    top: 50%; } }
     @media (min-width: 48em) and (max-width: 63.99em) {
   .advantages__box {
     -ms-flex: 0 0 50%;
