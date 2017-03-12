@@ -27,7 +27,13 @@ include ../abstracts/bemto/bemto.pug
           +e.LI.socials-item
             +e.A.socials-link--gplus(href="#")
 
+// Overlay
 +b.overlay
-  //- .help-block-success Спасибо! Ваш запрос отправлен специалисту по сертификации
+  +e.bg
+  +e.form
+    +e.close(href="/")
+    // Form application
+    +b.SECTION.form--call
+      +form(call)
 
 
