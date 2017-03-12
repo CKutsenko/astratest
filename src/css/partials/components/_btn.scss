@@ -1,13 +1,15 @@
 .btn{
   display: inline-block;
   vertical-align: middle;
-  white-space: nowrap;
   border-radius: 10px;
   font-family: $font-family-semibold;
   outline: none;
   padding: 9px 25px;
   margin: 0;
   @include transition();
+    @include mq($from:xs, $until:md){
+      text-align: center;
+    }
 
   &:hover, &:focus, &:active{
     // color: $text-color-white;
@@ -32,13 +34,25 @@
   &--border {
     border: 2px solid $orange;
     text-transform: uppercase;
+    @include transition();
+    &:hover {
+      border: 2px solid $dark-orange;
+    }
     a {
       color: $orange;
+      @include transition();
+      &:hover {
+        color: $dark-orange;
+      }
     }
   }
   &--work {
     margin-left: 65px;
     margin-bottom: 80px;
+    @include mq($from:xs, $until:md){
+      margin-left: 10px;
+      margin-bottom: 20px;
+    }
   }
   &--blue{
     background-color: #4179ae;
