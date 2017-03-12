@@ -24,7 +24,7 @@
     justify-content: space-between;
     flex-wrap: nowrap;
     align-items: center;
-    @include mq($from:xs, $until:md){
+    @include mq($from:xs, $until:xl){
       flex-direction: column;
     }
   }
@@ -35,7 +35,7 @@
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-    @include mq($from:xs, $until:sm){
+    @include mq($from:xs, $until:xl){
       flex-direction: column;
       align-items: center;
     }

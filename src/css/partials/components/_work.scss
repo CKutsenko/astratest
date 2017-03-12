@@ -1,0 +1,103 @@
+.work {
+  background-image: url(../img/work-bgr-1200.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 30px 0;
+  background-position: 50% 50%;
+    @include mq($from:xs, $until:md){
+      background-image: none;
+    }
+  &__wrapper {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    @include mq($from:xs, $until:md){
+      flex-direction: column;
+    }
+  }
+  &__box {
+    flex: 0 0 50%;
+    @include mq($from:xs, $until:md){
+      flex: 0 0 100%;
+    }
+  }
+  &__title {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: $font-family-semibold;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    position: relative;
+    padding-left: 65px;
+    &:before {
+      position: absolute;
+      content: '';
+      height: 3px;
+      width: 40px;
+      background-color: $black;
+      bottom: 10px;
+      left: 65px;
+    }
+  }
+  &__text {
+    font-size: 18px;
+    padding-right: 65px;
+    padding-left: 65px;
+    padding-bottom: 40px;
+  }
+  &__list {
+    padding-top: 100px;
+    padding-left: 160px;
+  }
+  &__item {
+    list-style-type: none;
+    text-transform: uppercase;
+    font-family: 18px;
+    font-family: $font-family-semibold;
+    padding-bottom: 100px;
+    position: relative;
+    &:before {
+      position: absolute;
+      content: '';
+      left: -80px;
+      top: -10%;
+    }
+    &:after {
+      position: absolute;
+      content: '';
+      @include sprite($s-arrow-down);
+      left: -65px;
+      top: 60px;
+    }
+    &:last-of-type {
+      &:after {
+        display: none;
+      }
+    }
+    &--first {
+      &:before {
+        @include sprite($s-work1);
+      }
+    }
+    &--second {
+      &:before {
+        @include sprite($s-work2);
+      }
+    }
+    &--third {
+      &:before {
+        @include sprite($s-work3);
+        left: -110px;
+        top: -5%;
+      }
+    }
+    &--fourth {
+      &:before {
+        @include sprite($s-work4);
+        top: -5%;
+      }
+    }
+  }
+}
