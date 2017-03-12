@@ -38,6 +38,18 @@ jQuery(document).ready(function($){
     return false;
   });
 
+  // var map = new GMaps({
+  //       el: '.contacts__map',
+  //       lat: 59.971198,
+  //       lng: 30.315121,
+  //       scrollwheel: false
+  //   });
+  //   map.drawOverlay({
+  //       lat: 59.971198,
+  //       lng: 30.315121,
+  //       content: '<div class="pin"></div>'
+  //   });
+
   /* галерея Gratitude */
   $('.gratitude__gallery').slick({
     infinite: true,
@@ -190,6 +202,19 @@ jQuery(document).ready(function($){
 
   /* Маска телефона */
   $('#formCall input[type="tel"]').inputmask("+7(999)9999999");
+
+      /* Map */
+    var map = new GMaps({
+        el: '.contacts__map',
+        lat: 59.971198,
+        lng: 30.315121,
+        scrollwheel: false
+    });
+    map.drawOverlay({
+        lat: 59.971198,
+        lng: 30.315121,
+        content: '<div class="pin"></div>'
+    });
 
 });
 

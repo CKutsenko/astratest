@@ -1,0 +1,22 @@
+.contacts{
+  padding-top: 50px;
+  &__title{
+    text-align: center;
+    font-size: $font-size-title;
+    margin: 0 0 50px;
+  }
+  &__map{
+    height: 350px;
+    width: 100%;
+    display: block;
+  }
+}
+
+
+
+.pin{
+  background-image: url(../img/map-pin.png);
+  background-repeat: no-repeat;
+  width: 67px;
+  height: 94px;
+}
