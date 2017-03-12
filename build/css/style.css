@@ -1764,36 +1764,112 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 50px; }
   .contacts__title {
     text-align: center;
-    font-size: 22px;
-    margin: 0 0 50px; }
+    font-size: 22px; }
   .contacts__map {
-    height: 350px;
+    height: 400px;
     width: 100%;
     display: block; }
+    .contacts__map--krasnodar, .contacts__map--kaluga, .contacts__map--nn {
+      display: none;
+      height: 400px !important;
+      width: 100% !important; }
+  .contacts__title {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: "nerissemibold", Arial, sans-serif; }
+  .contacts__switcher {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
+  .contacts__link {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: "nerissemibold", Arial, sans-serif;
+    color: #000000;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    border: 2px solid transparent; }
+    .contacts__link--active {
+      border: 2px solid #eb5b29;
+      border-radius: 10px; }
+  .contacts__text {
+    font-size: 18px;
+    padding: 5px 10px;
+    margin-bottom: 35px;
+    margin-right: 15px; }
 
 .pin {
-  background-image: url(../img/map-pin.png);
-  background-repeat: no-repeat;
-  width: 67px;
-  height: 94px; }
-
-@media (min-width: 540px) {
+  background-color: #386c9e;
+  position: fixed;
+  right: 28%;
+  top: 70px; }
+  .pin:after {
+    position: relative;
+    content: ''; }
+  .pin:before {
+    position: fixed;
+    content: '';
+    height: 10px;
+    width: 10px;
+    left: -50px;
+    top: -20px;
+    background-color: #386c9e; }
+  .pin__wrapper {
+    padding: 25px 80px 25px 20px;
+    color: #ffffff; }
+  .pin__title {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: "nerissemibold", Arial, sans-serif;
+    padding-bottom: 20px;
+    position: relative; }
+    .pin__title:before {
+      position: absolute;
+      content: '';
+      height: 2px;
+      width: 30px;
+      background-color: #ffffff;
+      left: 0;
+      bottom: 0; }
+    .pin__title:after {
+      position: absolute;
+      content: '';
+      height: 20px;
+      width: 20px;
+      background-color: #386c9e;
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+      left: -30px;
+      bottom: -120%; }
+  .pin__phone {
+    display: block;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: "nerissemibold", Arial, sans-serif; }
+  .pin__text {
+    padding: 10px 0; }
+  .pin__mail {
+    color: #ffffff; }
+  @media (min-width: 540px) {
   .container {
     max-width: 480px; } }
-
-@media (min-width: 768px) {
+  @media (min-width: 768px) {
   .container {
     max-width: 760px; } }
-
-@media (min-width: 1024px) {
+  @media (min-width: 1024px) {
   .container {
     max-width: 992px; } }
-
-@media (min-width: 1280px) {
+  @media (min-width: 1280px) {
   .container {
     max-width: 1080px; } }
-
-@media (max-width: 63.99em) {
+  @media (max-width: 63.99em) {
   .page {
     margin: 20px 0 0; }
   .page__form {
@@ -1873,8 +1949,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 20px;
     -ms-flex: 0 0 calc(100% - 40px);
     flex: 0 0 calc(100% - 40px); } }
-
-@media (max-width: 33.74em) {
+  @media (max-width: 33.74em) {
   .page__form .form-group {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -1905,9 +1980,13 @@ h1, h2, h3, h4, h5, h6 {
     -ms-flex-direction: column;
     flex-direction: column;
     -ms-flex-align: center;
-    align-items: center; } }
-
-@media (max-width: 47.99em) {
+    align-items: center; }
+  .contacts__switcher {
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .pin {
+    right: 0; } }
+  @media (max-width: 47.99em) {
   .page__inner {
     padding: 0 20px; }
   .btn {
@@ -1992,13 +2071,11 @@ h1, h2, h3, h4, h5, h6 {
   .work__item:after {
     left: 50%;
     top: 50%; } }
-
-@media (min-width: 48em) and (max-width: 63.99em) {
+  @media (min-width: 48em) and (max-width: 63.99em) {
   .advantages__box {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%; } }
-
-@media (max-width: 79.99em) {
+  @media (max-width: 79.99em) {
   .manager__inner {
     -ms-flex-direction: column;
     flex-direction: column; }

@@ -653,9 +653,20 @@
       </section>
       <!-- Contacts-->
       <section class="contacts">
-        <h2 class="contacts__title">Контакты:
-          <span class="contacts__map"></span>
-        </h2>
+        <h2 class="contacts__title">Контакты</h2>
+        <div class="contacts__switcher">
+          <p class="contacts__text">Выберите город:</p>
+          <a class="contacts__link contacts__link--active" href="#city-moscow">Москва</a>
+          <a class="contacts__link" href="#city-kranodar">Краснодар</a>
+          <a class="contacts__link" href="#city-kaluga">Калуга</a>
+          <a class="contacts__link" href="#city-nn">Нижний-Новгород</a>
+        </div>
+        <div class="contacts__content">
+          <div class="contacts__map contacts__map--moscow" id="city-moscow"></div>
+          <div class="contacts__map contacts__map--krasnodar" id="city-kranodar"></div>
+          <div class="contacts__map contacts__map--kaluga" id="city-kaluga"></div>
+          <div class="contacts__map contacts__map--nn" id="city-nn"></div>
+        </div>
       </section>
     </main>
     <!-- Footer-->

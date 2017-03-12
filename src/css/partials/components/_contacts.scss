@@ -3,20 +3,120 @@
   &__title{
     text-align: center;
     font-size: $font-size-title;
-    margin: 0 0 50px;
+
   }
   &__map{
-    height: 350px;
+    height: 400px;
     width: 100%;
     display: block;
+    &--krasnodar,
+    &--kaluga,
+    &--nn {
+      display: none;
+      height: 400px!important;
+      width: 100%!important;
+    }
+  }
+  &__title {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: $font-family-semibold;
+  }
+  &__switcher {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include mq($from:xs, $until:sm){
+      flex-direction: column;
+    }
+  }
+  &__link {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: $font-family-semibold;
+    color: $black;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    border: 2px solid transparent;
+    &--active {
+      border: 2px solid $orange;
+      border-radius: 10px;
+    }
+  }
+  &__text {
+    font-size: 18px;
+    padding: 5px 10px;
+    margin-bottom: 35px;
+    margin-right: 15px;
   }
 }
 
-
-
 .pin{
-  background-image: url(../img/map-pin.png);
-  background-repeat: no-repeat;
-  width: 67px;
-  height: 94px;
+  background-color: #386c9e;
+  position: fixed;
+  right: 28%;
+  top: 70px;
+    @include mq($from:xs, $until:sm){
+      right: 0;
+    }
+  &:after {
+    position: relative;
+    content: '';
+  }
+  &:before {
+    position: fixed;
+    content: '';
+    height: 10px;
+    width: 10px;
+    left: -50px;
+    top: -20px;
+    background-color: #386c9e;
+  }
+  &__wrapper {
+    padding: 25px 80px 25px 20px;
+    color: $white;
+  }
+  &__title {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: $font-family-semibold;
+    padding-bottom: 20px;
+    position: relative;
+    &:before {
+      position: absolute;
+      content: '';
+      height: 2px;
+      width: 30px;
+      background-color: $white;
+      left: 0;
+      bottom: 0;
+    }
+    &:after{
+      position: absolute;
+      content: '';
+      height: 20px;
+      width: 20px;
+      background-color: #386c9e;
+      transform: rotate(45deg);
+      left: -30px;
+      bottom: -120%;
+    }
+  }
+  &__phone {
+    display: block;
+    color: $white;
+    font-size: 16px;
+    font-family: $font-family-semibold;
+  }
+  &__text {
+    padding: 10px 0;
+  }
+  &__mail {
+    color: $white;
+  }
 }

@@ -38,18 +38,6 @@ jQuery(document).ready(function($){
     return false;
   });
 
-  // var map = new GMaps({
-  //       el: '.contacts__map',
-  //       lat: 59.971198,
-  //       lng: 30.315121,
-  //       scrollwheel: false
-  //   });
-  //   map.drawOverlay({
-  //       lat: 59.971198,
-  //       lng: 30.315121,
-  //       content: '<div class="pin"></div>'
-  //   });
-
   /* галерея Gratitude */
   $('.gratitude__gallery').slick({
     infinite: true,
@@ -88,6 +76,14 @@ jQuery(document).ready(function($){
       $(this).closest('.services__switcher').find('.services__link').removeClass('services__link--active');
       $(this).addClass('services__link--active');
       $(this).closest('.services').find('.services-type').hide();
+      $( $(this.hash) ).show();
+  });
+
+  $('.contacts__link').click(function(e) {
+      e.preventDefault();
+      $(this).closest('.contacts__switcher').find('.contacts__link').removeClass('contacts__link--active');
+      $(this).addClass('contacts__link--active');
+      $(this).closest('.contacts').find('.contacts__map').hide();
       $( $(this.hash) ).show();
   });
 
@@ -205,15 +201,51 @@ jQuery(document).ready(function($){
 
       /* Map */
     var map = new GMaps({
-        el: '.contacts__map',
-        lat: 59.971198,
-        lng: 30.315121,
+        el: '.contacts__map--moscow',
+        lat: 55.752596,
+        lng: 37.665174,
         scrollwheel: false
     });
     map.drawOverlay({
-        lat: 59.971198,
-        lng: 30.315121,
-        content: '<div class="pin"></div>'
+        lat: 55.752596,
+        lng: 37.665174,
+        content: '<div class="pin"><div class="pin__wrapper"><h2 class="pin__title">Контакты</h2><a class="pin__phone" href="tel:0000000">+7 499 600-90-90</a><a class="pin__phone" href="tel:0000000">+7 499 600-90-90</a><p class="pin__text">Москва, <br>Костомаровский пер., 3</p><span>/ </span><a class="pin__mail" href="mailto:info@mostest.su">info@mostest.su</a><span> /</span></div></div>'
+    });
+
+        var map = new GMaps({
+        el: '.contacts__map--krasnodar',
+        lat: 55.752596,
+        lng: 37.665174,
+        scrollwheel: false
+    });
+    map.drawOverlay({
+        lat: 55.752596,
+        lng: 37.665174,
+        content: '<div class="pin"><div class="pin__wrapper"><h2 class="pin__title">Контакты</h2><a class="pin__phone" href="tel:0000000">+7 499 600-90-90</a><a class="pin__phone" href="tel:0000000">+7 499 600-90-90</a><p class="pin__text">Краснодар, <br>Костомаровский пер., 3</p><span>/ </span><a class="pin__mail" href="mailto:info@mostest.su">info@mostest.su</a><span> /</span></div></div>'
+    });
+
+        var map = new GMaps({
+        el: '.contacts__map--kaluga',
+        lat: 55.752596,
+        lng: 37.665174,
+        scrollwheel: false
+    });
+    map.drawOverlay({
+        lat: 55.752596,
+        lng: 37.665174,
+        content: '<div class="pin"><div class="pin__wrapper"><h2 class="pin__title">Контакты</h2><a class="pin__phone" href="tel:0000000">+7 499 600-90-90</a><a class="pin__phone" href="tel:0000000">+7 499 600-90-90</a><p class="pin__text">Калуга, <br>Костомаровский пер., 3</p><span>/ </span><a class="pin__mail" href="mailto:info@mostest.su">info@mostest.su</a><span> /</span></div></div>'
+    });
+
+        var map = new GMaps({
+        el: '.contacts__map--nn',
+        lat: 55.752596,
+        lng: 37.665174,
+        scrollwheel: false
+    });
+    map.drawOverlay({
+        lat: 55.752596,
+        lng: 37.665174,
+        content: '<div class="pin"><div class="pin__wrapper"><h2 class="pin__title">Контакты</h2><a class="pin__phone" href="tel:0000000">+7 499 600-90-90</a><a class="pin__phone" href="tel:0000000">+7 499 600-90-90</a><p class="pin__text">Нижний Новгород, <br>Костомаровский пер., 3</p><span>/ </span><a class="pin__mail" href="mailto:info@mostest.su">info@mostest.su</a><span> /</span></div></div>'
     });
 
 });
