@@ -1,0 +1,99 @@
+.converter {
+  &__title-wrapper {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../img/converter-bgr.jpg);
+  background-size: cover;
+  min-height: 200px;
+  color: $white;
+  }
+  &__title {
+    font-size: 24px;
+    font-family: $font-family-semibold;
+    text-transform: uppercase;
+  }
+  &__subtitle {
+    text-align: center;
+    font-size: 24px;
+    font-family: $font-family-semibold;
+    text-transform: uppercase;
+  }
+  &__wrapper {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    @include mq($from:xs, $until:md){
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__inner {
+    flex: 0 0 40%;
+    @include mq($from:xs, $until:md){
+      flex: 0 0 100%;
+    }
+  }
+  &__name {
+    font-size: 20px;
+    font-family: $font-family-semibold;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  &__btn-wrapper {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: flex-start;
+    @include mq($from:xs, $until:md){
+      flex-direction: column;
+      align-items: center;
+    }
+    .btn {
+      width: 125px;
+    }
+  }
+  &__input {
+    padding: 8px 10px;
+    width: 100%;
+    border: 1px solid $grey-border;
+    color: $black;
+    margin: 20px 0;
+    background-color: $white;
+    box-shadow:inset 1px 1px 3px 1px rgba(182,182,183,1);
+    outline: transparent;
+    border-radius: 4px;
+    &:focus::-webkit-input-placeholder{
+      color: $black;
+    }
+    &:focus::placeholder{
+      color: $black;
+    }
+  }
+  &__result {
+    margin-left: 15px;
+  }
+  &__download {
+    margin: 55px 0 55px 80px;
+    display: block;
+    color: $black;
+    text-decoration: underline;
+    position: relative;
+    &:before {
+      position: absolute;
+      content: '';
+      @include sprite($s-pdf4);
+      left: -80px;
+      top: -13px;
+    }
+  }
+}

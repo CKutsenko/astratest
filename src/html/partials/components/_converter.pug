@@ -1,0 +1,26 @@
+include ../abstracts/bemto/bemto.pug
+
++b.SECTION.converter
+  +e.title-wrapper
+    +e.H1.title КОДЫ ОБЩЕРОССИЙСКИХ КЛАССИФИКАТОРОВ
+  .container
+    +e.H2.subtitle Онлайн-конвертер
+    +e.wrapper
+      +e.inner
+        +e.H3.name Из ТИВЭД в ОКПД2
+        +e.FORM.form
+          +e.INPUT.input(type='text', name='Введите ТИВЭД', placeholder='Введите ТИВЭД')
+        +e.btn-wrapper
+          +b.btn--blue
+            a(href="#") Резултат
+          +e.SPAN.result Узать результат Текст результата
+        +e.A.download(href="#" download) Скачать перечень ТИВЭД
+      +e.inner
+        +e.H3.name Из ОКП в ОКПД2
+        +e.FORM.form
+          +e.INPUT.input(type='text', name='Введите ОКП', placeholder='Введите ОКП')
+        +e.btn-wrapper
+          +b.btn--blue
+            a(href="#") Резултат
+          +e.SPAN.result Узать результат
+        +e.A.download(href="#" download) Скачать перечень ОКПД2
