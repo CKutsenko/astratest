@@ -1525,6 +1525,8 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "nerissemibold", Arial, sans-serif;
     font-size: 24px;
     text-transform: uppercase; }
+    .services__title--page {
+      font-size: 20px; }
   .services__switcher {
     display: -ms-flexbox;
     display: flex;
@@ -1552,7 +1554,10 @@ h1, h2, h3, h4, h5, h6 {
       background-color: #eb5b29; }
 
 .services-type {
-  display: none; }
+  display: none;
+  font-size: 16px;
+  text-transform: none;
+  font-family: "nerislight", Arial, sans-serif; }
   .services-type:first-of-type {
     display: block; }
   .services-type__wrapper--production {
@@ -1717,6 +1722,64 @@ h1, h2, h3, h4, h5, h6 {
       transition: all 0.325s ease 0s; }
       .services-type__subitem-docks > a:hover {
         text-decoration: underline; }
+
+.services-page {
+  background-image: url(../img/services-bgr.jpg);
+  background-size: cover;
+  min-height: 200px;
+  color: #ffffff;
+  text-align: center; }
+  .services-page__title {
+    padding-top: 70px;
+    text-transform: uppercase;
+    font-family: "nerissemibold", Arial, sans-serif;
+    font-size: 24px; }
+  .services-page__form {
+    width: 40%;
+    position: relative;
+    margin-left: 30%; }
+  .services-page__input {
+    padding: 5px 10px;
+    width: 100%;
+    border: 1px solid #dadada;
+    border-bottom: none;
+    color: #000000;
+    background-color: #ffffff;
+    box-shadow: inset 0 -4px 0 #b6b6b7;
+    outline: transparent;
+    font-size: 15px;
+    border-radius: 3px; }
+    .services-page__input:focus::-webkit-input-placeholder {
+      color: #000000; }
+    .services-page__input:focus::-moz-placeholder {
+      color: #000000; }
+    .services-page__input:focus:-ms-input-placeholder {
+      color: #000000; }
+    .services-page__input:focus::placeholder {
+      color: #000000; }
+  .services-page__button {
+    border-radius: 0 3px 3px 0;
+    top: 0;
+    right: 0;
+    position: absolute;
+    display: inline-block;
+    vertical-align: middle;
+    outline: none;
+    height: 100%;
+    margin: 0;
+    font-family: "nerissemibold", Arial, sans-serif;
+    transition: all 0.325s ease 0s;
+    background-color: #eb5b29;
+    box-shadow: inset 0 -4px 0 #a42c26;
+    font-size: 15px;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    padding-bottom: 12px; }
+    .services-page__button:hover, .services-page__button:focus, .services-page__button:active {
+      background-color: #a42c26; }
+    .services-page__button a {
+      color: #ffffff; }
 
 .work {
   background-image: url(../img/work-bgr-1200.jpg);
@@ -2209,6 +2272,9 @@ h1, h2, h3, h4, h5, h6 {
   .services-type__wrapper--docks {
     -ms-flex-direction: column;
     flex-direction: column; }
+  .services-page__form {
+    width: calc(100% - 40px);
+    margin: 0 20px; }
   .work {
     background-image: none; }
   .work__wrapper {

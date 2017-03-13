@@ -115,53 +115,24 @@
       </div>
     </header>
     <main>
-      <!--Promo-->
-      <!--Manger-->
-      <section class="promo">
+      <!--Services-->
+      <section class="services-page">
         <div class="container">
-          <div class="promo__inner">
-            <div class="promo__box promo__box--wide">
-              <h1 class="promo__title">ЧТО НУЖНО ОФОРМИТЬ:
-                <br> СЕРТИФИКАТ ИЛИ ДЕКЛАРАЦИЮ?</h1>
-              <p class="promo__text">ПОМОЖЕМ ПОЛУЧИТЬ ПОЛНЫЙ ПАКЕТ ДОКУМЕНТОВ,
-                <br> НЕОБХОДИМЫЙ ДЛЯ ПРОИЗВОДСТВА И РЕАЛИЗАЦИИ ПРОДУКЦИИ</p>
-              <p class="promo__motto">Время вашего преимущества - сейчас!</p>
-            </div>
-            <div class="promo__box promo__box--short">
-              <section class="form form--call">
-                <form class="form__form" action="" method="" id="formCall">
-                  <h3 class="form__title">Подскажем, что необходимо именно в Вашей ситуации</h3>
-                  <div class="form-group field-question-name required">
-                    <input class="form__input" type="tel" name="Телефон" placeholder="Ваш телефон" />
-                    <p class="help-block help-block-error">Ошибка заполнения поля формы</p>
-                  </div>
-                  <div class="form-group field-question-phone required">
-                    <input class="form__input" type="email" name="e-mail" placeholder="Ваш e-mail" />
-                    <p class="help-block help-block-error">Ошибка заполнения поля формы</p>
-                  </div>
-                  <div class="form-group field-question-name required">
-                    <input class="form__input" type="text" name="Продукция" placeholder="Ваша продукция или услуга" />
-                    <p class="help-block help-block-error">Ошибка заполнения поля формы</p>
-                    <button class="btn btn--blue" type="submit">Узнать стоимость за 15 минут</button>
-                  </div>
-                  <p class="help-block help-block-success">Ваша заявка отправлена</p>
-                </form>
-              </section>
-            </div>
+          <div class="services-page__wrapper">
+            <h1 class="services-page__title">Услуги</h1>
+            <form class="services-page__form">
+              <input class="services-page__input" type="text" name="Поиск по тексту" placeholder="Поиск по тексту..." />
+              <button class="services-page__button" type="submit">Найти</button>
+            </form>
           </div>
         </div>
       </section>
       <!--Services-->
       <section class="services">
-        <div class="container">
-          <h2 class="services__title">Услуги</h2>
-          <div class="services__switcher">
-            <a class="services__link services__link--docs services__link--active" href="#services-docs">сертификация по документам</a>
-            <a class="services__link services__link--production" href="#services-production">сертификация по продукции</a>
-          </div>
-          <div class="services__content">
-            <div class="services-type services-type--docs" id="services-docs">
-              <div class="services-type__wrapper services-type__wrapper--docks">
+        <div class="container services__contant">
+          <h2 class="services__title services__title--page">сертификация по документам
+            <span class="services-type services-type--docs">
+              <span class="services-type__wrapper services-type__wrapper--docks">
                 <!--First col-->
                 <ul class="services-type__list services-type__list--docks">
                   <li class="services-type__item services-type__item--docks">
@@ -392,10 +363,12 @@
                     </ul>
                   </li>
                 </ul>
-              </div>
-            </div>
-            <div class="services-type services-type--production" id="services-production">
-              <div class="services-type__wrapper services-type__wrapper--production">
+              </span>
+            </span>
+          </h2>
+          <h2 class="services__title services__title--page">сертификация по продукции
+            <span class="services-type services-type--production" id="services-production">
+              <span class="services-type__wrapper services-type__wrapper--production">
                 <ul class="services-type__list services-type__list--production">
                   <li class="services-type__item-production services-type__item-production--serv1">
                     <a href="#">Легкая промышленность</a>
@@ -456,34 +429,43 @@
                     <a href="#">СИЗ</a>
                   </li>
                 </ul>
-              </div>
-            </div>
-          </div>
+              </span>
+            </span>
+          </h2>
         </div>
       </section>
-      <!--Advantages-->
-      <!--Advantages-->
-      <section class="advantages">
+      <!--Promo-->
+      <!--Manger-->
+      <section class="promo">
         <div class="container">
-          <h2 class="advantages__title">ПРЕИМУЩЕСТВА НАШЕЙ КОМПАНИИ</h2>
-          <div class="advantages__wrapper">
-            <div class="advantages__box">
-              <h3 class="advantages__subtitle advantages__subtitle--first">Гарантия: никаких подделок</h3>
-              <p class="advantages__text">Мы работаем более 17 лет и дорожим своей репутацией, поэтому гарантируем предоставление только оригинальных документов</p>
+          <div class="promo__inner">
+            <div class="promo__box promo__box--wide">
+              <h1 class="promo__title">ЧТО НУЖНО ОФОРМИТЬ:
+                <br> СЕРТИФИКАТ ИЛИ ДЕКЛАРАЦИЮ?</h1>
+              <p class="promo__text">ПОМОЖЕМ ПОЛУЧИТЬ ПОЛНЫЙ ПАКЕТ ДОКУМЕНТОВ,
+                <br> НЕОБХОДИМЫЙ ДЛЯ ПРОИЗВОДСТВА И РЕАЛИЗАЦИИ ПРОДУКЦИИ</p>
+              <p class="promo__motto">Время вашего преимущества - сейчас!</p>
             </div>
-            <div class="advantages__box">
-              <h3 class="advantages__subtitle advantages__subtitle--second">Входим
-                <br> в ситуацию</h3>
-              <p class="advantages__text">Действительно индивидуальный подход. Разберем все нюансы вашей ситуации, поможем ускорить оформление или снизить стоимость</p>
-            </div>
-            <div class="advantages__box">
-              <h3 class="advantages__subtitle advantages__subtitle--third">Присутствие не обязательно</h3>
-              <p class="advantages__text">Более 80% клиентов работаю с нами по электронной почте, а готовые документы мы бесплатно присылаем курьером</p>
-            </div>
-            <div class="advantages__box">
-              <h3 class="advantages__subtitle advantages__subtitle--fourth">Работаем
-                <br> с 1999 года</h3>
-              <p class="advantages__text">Мы постоянно отслеживаем изменения в законодательсте и предоставляем только актуальную информацию по современным стандартам</p>
+            <div class="promo__box promo__box--short">
+              <section class="form form--call">
+                <form class="form__form" action="" method="" id="formCall">
+                  <h3 class="form__title">Подскажем, что необходимо именно в Вашей ситуации</h3>
+                  <div class="form-group field-question-name required">
+                    <input class="form__input" type="tel" name="Телефон" placeholder="Ваш телефон" />
+                    <p class="help-block help-block-error">Ошибка заполнения поля формы</p>
+                  </div>
+                  <div class="form-group field-question-phone required">
+                    <input class="form__input" type="email" name="e-mail" placeholder="Ваш e-mail" />
+                    <p class="help-block help-block-error">Ошибка заполнения поля формы</p>
+                  </div>
+                  <div class="form-group field-question-name required">
+                    <input class="form__input" type="text" name="Продукция" placeholder="Ваша продукция или услуга" />
+                    <p class="help-block help-block-error">Ошибка заполнения поля формы</p>
+                    <button class="btn btn--blue" type="submit">Узнать стоимость за 15 минут</button>
+                  </div>
+                  <p class="help-block help-block-success">Ваша заявка отправлена</p>
+                </form>
+              </section>
             </div>
           </div>
         </div>
@@ -547,111 +529,7 @@
           </div>
         </div>
       </section>
-      <!-- Ask manager-->
-      <!--Manger-->
-      <section class="manager">
-        <div class="container">
-          <h2 class="manager__title">СПРОСИТЬ СПЕЦИАЛИСТА ПО ВОПРОСУ СЕРТИФИКАЦИИ</h2>
-          <div class="manager__inner">
-            <div class="manager__box">
-              <div class="manager__img">
-                <img src="img/manager.jpg">
-              </div>
-              <div class="manager__socials-wrapper">
-                <p class="manager__name">Гузель Аманова</p>
-                <a class="manager__socials manager__socials--phone" href="tel:+7888996614">+7 888 99-66-14</a>
-                <a class="manager__socials manager__socials--skype" href="skype:guzelamanova">guzelamanova</a>
-                <p class="manager__socials manager__socials--icq">677-836-554</p>
-              </div>
-            </div>
-            <div class="manager__box">
-              <section class="form form--question">
-                <form class="form__form" action="" method="" id="formQuestion">
-                  <h3 class="form__title"></h3>
-                  <div class="form-group field-question-name required">
-                    <input class="form__input" type="text" name="Имя" placeholder="Ваш телефон или e-mail" />
-                    <p class="help-block help-block-error">Ошибка заполнения поля формы</p>
-                    <textarea class="form__textarea" type="text" name="Ваш вопрос" placeholder="Вопрос..."></textarea>
-                    <p class="help-block help-block-error">Ошибка заполнения поля формы</p>
-                    <button class="btn btn--orange" type="submit">Получить консультацию</button>
-                  </div>
-                  <p class="help-block help-block-success">Ваш вопрос отправлен</p>
-                </form>
-              </section>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Clients-->
-      <section class="clients container">
-        <h2 class="clients__title">Наши клиенты</h2>
-        <div class="clients__gallery">
-          <div class="clients__slide">
-            <div class="clients__img">
-              <img src="img/clients/partner1.png" alt="partner1" title="partner1">
-            </div>
-            <h3 class="clients__slide-title">ООО Восход</h3>
-            <p class="clients__text">Lorem ipsum dolor sit amet</p>
-          </div>
-          <div class="clients__slide">
-            <div class="clients__img">
-              <img src="img/clients/partner2.png" alt="partner2" title="partner2">
-            </div>
-            <h3 class="clients__slide-title">ООО Восход</h3>
-            <p class="clients__text">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-          </div>
-          <div class="clients__slide">
-            <div class="clients__img">
-              <img src="img/clients/partner3.png" alt="partner3" title="partner3">
-            </div>
-            <h3 class="clients__slide-title">ООО Восход</h3>
-            <p class="clients__text">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-          </div>
-          <div class="clients__slide">
-            <div class="clients__img">
-              <img src="img/clients/partner1.png" alt="partner1" title="partner1">
-            </div>
-            <h3 class="clients__slide-title">ООО Восход</h3>
-            <p class="clients__text">Lorem ipsum</p>
-          </div>
-          <div class="clients__slide">
-            <div class="clients__img">
-              <img src="img/clients/partner2.png" alt="partner2" title="partner2">
-            </div>
-            <h3 class="clients__slide-title">ООО Восход</h3>
-            <p class="clients__text">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-          </div>
-          <div class="clients__slide">
-            <div class="clients__img">
-              <img src="img/clients/partner3.png" alt="partner3" title="partner3">
-            </div>
-            <h3 class="clients__slide-title">ООО Восход</h3>
-            <p class="clients__text">Lorem ipsum dolor sit amet</p>
-          </div>
-          <div class="clients__slide">
-            <div class="clients__img">
-              <img src="img/clients/partner1.png" alt="partner1" title="partner1">
-            </div>
-            <h3 class="clients__slide-title">ООО Восход</h3>
-            <p class="clients__text">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-          </div>
-          <div class="clients__slide">
-            <div class="clients__img">
-              <img src="img/clients/partner2.png" alt="partner2" title="partner2">
-            </div>
-            <h3 class="clients__slide-title">ООО Восход</h3>
-            <p class="clients__text">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-          </div>
-          <div class="clients__slide">
-            <div class="clients__img">
-              <img src="img/clients/partner3.png" alt="partner3" title="partner3">
-            </div>
-            <h3 class="clients__slide-title">ООО Восход</h3>
-            <p class="clients__text">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-          </div>
-        </div>
-      </section>
-      <!-- Contacts-->
+      <!--Contacts-->
       <section class="contacts">
         <h2 class="contacts__title">Контакты</h2>
         <div class="contacts__switcher">
