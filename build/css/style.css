@@ -1901,6 +1901,27 @@ h1, h2, h3, h4, h5, h6 {
     padding: 10px 0; }
   .pin__mail {
     color: #ffffff; }
+
+.page-contacts {
+  background-image: url(../img/contacts-bgr.jpg);
+  background-size: cover;
+  min-height: 200px;
+  color: #ffffff;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .page-contacts__title {
+    font-size: 24px;
+    font-family: "nerissemibold", Arial, sans-serif;
+    text-transform: uppercase; }
+  .page-contacts .contacts__title {
+    display: none; }
   @media (min-width: 540px) {
   .container {
     max-width: 480px; } }

@@ -1,0 +1,19 @@
+include ../abstracts/bemto/bemto.pug
+
++b.SECTION.page-contacts
+  .container
+    +e.H1.title Конаткты
++b.SECTION.contacts
+  +e.switcher
+    +e.P.text Выберите город:
+    +e.A.link--active(href="#city-moscow") Москва
+    +e.A.link(href="#city-kranodar") Краснодар
+    +e.A.link(href="#city-kaluga") Калуга
+    +e.A.link(href="#city-nn") Нижний-Новгород
+
+
+  +e.content
+    +e.map--moscow(id='city-moscow')
+    +e.map--krasnodar(id='city-kranodar')
+    +e.map--kaluga(id='city-kaluga')
+    +e.map--nn(id='city-nn')

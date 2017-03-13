@@ -120,3 +120,25 @@
     color: $white;
   }
 }
+
+.page-contacts {
+  background-image: url(../img/contacts-bgr.jpg);
+  background-size: cover;
+  min-height: 200px;
+  color: $white;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__title {
+    font-size: 24px;
+    font-family: $font-family-semibold;
+    text-transform: uppercase;
+  }
+  .contacts__title {
+    display: none;
+  }
+}
