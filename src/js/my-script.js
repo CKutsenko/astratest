@@ -136,6 +136,39 @@ jQuery(document).ready(function($){
     });
   }
 
+  /* галерея "с нами уже работают" */
+  if ($(window).width() <= 480) {
+    $('.manager-gallery__slider').slick({
+      infinite: true,
+      arrows: false,
+      dots: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      centerMode: true,
+      centerPadding: '0'
+    });
+  } else if ($(window).width() <= 768) {
+    $('.manager-gallery__slider').slick({
+      infinite: true,
+      arrows: true,
+      dots: false,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      centerMode: true,
+      centerPadding: '0'
+    });
+  } else {
+    $('.manager-gallery__slider').slick({
+      infinite: true,
+      arrows: true,
+      dots: false,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      centerMode: true,
+      centerPadding: '0'
+    });
+  }
+
   /* Side fixed menu showing */
   $(".side-fixed-menu").animate({right: 0}, 1000)
 
