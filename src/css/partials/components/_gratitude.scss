@@ -22,6 +22,7 @@
   &__gallery{
     margin: 0 auto;
     position: relative;
+    z-index: 10;
   }
   &__slide{
     position: relative;

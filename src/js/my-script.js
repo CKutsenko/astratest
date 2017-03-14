@@ -69,6 +69,7 @@ jQuery(document).ready(function($){
     e.preventDefault();
     $('body').css({"overflow":"hidden"});
     $('.gratitude-overlay').show();
+    $('.gratitude').css({"opacity":"0"});
     $(this).closest('.gratitude__slide').find('.gratitude__modal').clone().appendTo($('.gratitude-overlay'))
     .show()
     .animate({opacity: 1}, 200);
@@ -82,6 +83,7 @@ jQuery(document).ready(function($){
         function(){
           $(this).remove();
           $('.gratitude-overlay').fadeOut(400);
+          $('.gratitude').css({"opacity":"1"});
         }
       );
   });

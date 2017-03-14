@@ -5,6 +5,13 @@
   padding: 50px 0;
   position: relative;
   background-position: 40% 50%;
+  &--article {
+    background-image: url(../img/page-bgr.jpg);
+    background-position: 50% 50%;
+    .form__title {
+      display: none;
+    }
+  }
     @include mq($from:xs, $until:md){
       background-image: none;
       background-color: #3e75a9;
@@ -50,6 +57,11 @@
     font-family: $font-family-semibold;
     margin-bottom: 35px;
     line-height: 1.5;
+    &--light {
+      font-family: $font-family;
+      text-transform: none;
+      margin-bottom: 50px;
+    }
     @include mq($from:xs, $until:md){
       font-size: 16px;
       margin-bottom: 20px;
