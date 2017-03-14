@@ -116,63 +116,175 @@
     </header>
     <main>
       <!--News-->
-      <section class="news-header">
-        <h1 class="news-header__title">Новости</h1>
-        <form class="news-header__form" action="" method="">
-          <select class="news-header__select">
-            <option>Выберите тему</option>
-            <option>Новости 1</option>
-            <option>Новости 1</option>
-            <option>Новости 1</option>
-            <option>Новости 1</option>
-            <option>Новости 1</option>
-          </select>
-          <span class="news-header__button"></span>
-        </form>
+      <!--Reviews Header-->
+      <section class="reviews-header">
+        <h1 class="reviews-header__title">отзывы</h1>
       </section>
-      <section class="news container">
-        <div class="news__inner">
-          <div class="news__img">
-            <img src="img/news1.jpg">
+      <div class="reviews-form">
+        <div class="container">
+          <h2 class="reviews-form__title">Работали с нами?
+            <br> Поделитесь своим впечатлением о нашей компании с другими</h2>
+          <section class="form form--review">
+            <form class="form__form" action="" method="" id="formReview">
+              <h3 class="form__title"></h3>
+              <div class="form-group field-question-name required">
+                <input class="form__input" type="text" name="Компания и имя" placeholder="Ваше имя и название организации" />
+                <p class="help-block help-block-error">Ошибка заполнения поля формы</p>
+              </div>
+              <div class="form-group required">
+                <textarea class="form__textarea" type="text" name="Ваш отзыв" placeholder="Текст отзыва"></textarea>
+                <p class="help-block help-block-error">Ошибка заполнения поля формы</p>
+                <button class="btn btn--orange" type="submit">Оставить свой отзыв</button>
+              </div>
+              <p class="help-block help-block-success">Отзыв успешно оставлен</p>
+            </form>
+          </section>
+        </div>
+      </div>
+      <section class="reviews reviews--page">
+        <div class="container">
+          <h2 class="reviews__title">Отзывы</h2>
+          <div class="reviews__wrapper">
+            <div class="reviews__column">
+              <div class="reviews__slide">
+                <div class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                  aute irure dolor in culpa qui officia deserunt mollit anim id est laborum.</div>
+                <div class="reviews__name">ООО Восход</div>
+                <div class="reviews__date">17.05.16</div>
+              </div>
+              <div class="reviews__slide">
+                <div class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                <div
+                  class="reviews__name">ООО Восход</div>
+              <div class="reviews__date">17.05.16</div>
+            </div>
           </div>
-          <div class="news__contant">
-            <a class="news__title" href="page.html">Может быть изменен порядок допуска лекарственных средств на отечественный рынок</a>
-            <p class="news__text">В Российской Федерации может быть изменен порядок допуска лекарственных средств на отечественный рынок – соответствующий документ был подготовлен Министерством здравоохранения Российской Федерации и в данный момент проходит этап общественного
-              обсуждения. Согласно обсуждаемому документу, лекарственные средства не должны ...</p>
-            <p class="news__date">8 марта, 2016г</p>
+          <div class="reviews__column">
+            <div class="reviews__slide">
+              <div class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad m</div>
+              <div class="reviews__name">ООО Восход</div>
+              <div class="reviews__date">17.05.16</div>
+            </div>
+            <div class="reviews__slide">
+              <div class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+              <div class="reviews__name">ООО Восход</div>
+              <div class="reviews__date">17.05.1</div>
+            </div>
           </div>
         </div>
-        <div class="news__inner">
-          <div class="news__img">
-            <img src="img/news2.jpg">
-          </div>
-          <div class="news__contant">
-            <a class="news__title" href="page.html">Может быть изменен порядок допуска лекарственных средств на отечественный рынок</a>
-            <p class="news__text">В Российской Федерации может быть изменен порядок допуска лекарственных средств на отечественный рынок – соответствующий документ был подготовлен Министерством здравоохранения Российской Федерации и в данный момент проходит этап общественного
-              обсуждения. Согласно обсуждаемому документу, лекарственные средства не должны ...</p>
-            <p class="news__date">8 марта, 2016г</p>
-          </div>
+        <div class="reviews__pagination">
+          <ul class="reviews__list">
+            <li class="reviews__item">
+              <a class="reviews__link" href="#">1</a>
+            </li>
+            <li class="reviews__item">
+              <a class="reviews__link" href="#">2</a>
+            </li>
+            <li class="reviews__item">
+              <a class="reviews__link reviews__link--active" href="#">3</a>
+            </li>
+            <li class="reviews__item">
+              <a class="reviews__link" href="#">4</a>
+            </li>
+            <li class="reviews__item">
+              <a class="reviews__link" href="#">5</a>
+            </li>
+          </ul>
         </div>
-        <div class="news__inner">
-          <div class="news__img">
-            <img src="img/news1.jpg">
-          </div>
-          <div class="news__contant">
-            <a class="news__title" href="page.html">Может быть изменен порядок допуска лекарственных средств на отечественный рынок</a>
-            <p class="news__text">В Российской Федерации может быть изменен порядок допуска лекарственных средств на отечественный рынок – соответствующий документ был подготовлен Министерством здравоохранения Российской Федерации и в данный момент проходит этап общественного
-              обсуждения. Согласно обсуждаемому документу, лекарственные средства не должны ...</p>
-            <p class="news__date">8 марта, 2016г</p>
-          </div>
         </div>
-        <div class="news__inner">
-          <div class="news__img">
-            <img src="img/news2.jpg">
+      </section>
+      <!--Gratitude-->
+      <section class="gratitude container">
+        <h2 class="gratitude__title">Благодарственные письма</h2>
+        <div class="gratitude__gallery">
+          <div class="gratitude__slide">
+            <div class="gratitude__img">
+              <img src="img/thanksletters/1.jpg" alt="Отзыв 1" title="Отзыв 1">
+              <a class="gratitude__link" href="#"></a>
+              <p class="gratitude__name">ООО Восход</p>
+              <p class="gratitude__text">Офрмление сертификата</p>
+            </div>
+            <div class="gratitude__modal">
+              <img src="img/thanksletters/1.jpg" alt="Отзыв 1" title="Отзыв 1">
+            </div>
           </div>
-          <div class="news__contant">
-            <a class="news__title" href="page.html">Может быть изменен порядок допуска лекарственных средств на отечественный рынок</a>
-            <p class="news__text">В Российской Федерации может быть изменен порядок допуска лекарственных средств на отечественный рынок – соответствующий документ был подготовлен Министерством здравоохранения Российской Федерации и в данный момент проходит этап общественного
-              обсуждения. Согласно обсуждаемому документу, лекарственные средства не должны ...</p>
-            <p class="news__date">8 марта, 2016г</p>
+          <div class="gratitude__slide">
+            <div class="gratitude__img">
+              <img src="img/thanksletters/2.jpg" alt="Отзыв 2" title="Отзыв 2">
+              <a class="gratitude__link" href="#"></a>
+              <p class="gratitude__name">ООО Восход</p>
+              <p class="gratitude__text">Офрмление сертификата Офрмление сертификата</p>
+            </div>
+            <div class="gratitude__modal">
+              <img src="img/thanksletters/2.jpg" alt="Отзыв 2" title="Отзыв 2">
+            </div>
+          </div>
+          <div class="gratitude__slide">
+            <div class="gratitude__img">
+              <img src="img/thanksletters/3.jpg" alt="Отзыв 3" title="Отзыв 3">
+              <a class="gratitude__link" href="#"></a>
+              <p class="gratitude__name">ООО Восход</p>
+              <p class="gratitude__text">Офрмление сертификата</p>
+            </div>
+            <div class="gratitude__modal">
+              <img src="img/thanksletters/3.jpg" alt="Отзыв 3" title="Отзыв 3">
+            </div>
+          </div>
+          <div class="gratitude__slide">
+            <div class="gratitude__img">
+              <img src="img/thanksletters/4.jpg" alt="Отзыв 4" title="Отзыв 4">
+              <a class="gratitude__link" href="#"></a>
+              <p class="gratitude__name">ООО Восход</p>
+              <p class="gratitude__text">Офрмление сертификата</p>
+            </div>
+            <div class="gratitude__modal">
+              <img src="img/thanksletters/4.jpg" alt="Отзыв 4" title="Отзыв 4">
+            </div>
+          </div>
+          <div class="gratitude__slide">
+            <div class="gratitude__img">
+              <img src="img/thanksletters/1.jpg" alt="Отзыв 1" title="Отзыв 1">
+              <a class="gratitude__link" href="#"></a>
+              <p class="gratitude__name">ООО Восход</p>
+              <p class="gratitude__text">Офрмление сертификата</p>
+            </div>
+            <div class="gratitude__modal">
+              <img src="img/thanksletters/1.jpg" alt="Отзыв 1" title="Отзыв 1">
+            </div>
+          </div>
+          <div class="gratitude__slide">
+            <div class="gratitude__img">
+              <img src="img/thanksletters/2.jpg" alt="Отзыв 2" title="Отзыв 2">
+              <a class="gratitude__link" href="#"></a>
+              <p class="gratitude__name">ООО Восход</p>
+              <p class="gratitude__text">Офрмление сертификата Офрмление сертификата</p>
+            </div>
+            <div class="gratitude__modal">
+              <img src="img/thanksletters/2.jpg" alt="Отзыв 2" title="Отзыв 2">
+            </div>
+          </div>
+          <div class="gratitude__slide">
+            <div class="gratitude__img">
+              <img src="img/thanksletters/3.jpg" alt="Отзыв 3" title="Отзыв 3">
+              <a class="gratitude__link" href="#"></a>
+              <p class="gratitude__name">ООО Восход</p>
+              <p class="gratitude__text">Офрмление сертификата</p>
+            </div>
+            <div class="gratitude__modal">
+              <img src="img/thanksletters/3.jpg" alt="Отзыв 3" title="Отзыв 3">
+            </div>
+          </div>
+          <div class="gratitude__slide">
+            <div class="gratitude__img">
+              <img src="img/thanksletters/4.jpg" alt="Отзыв 4" title="Отзыв 4">
+              <a class="gratitude__link" href="#"></a>
+              <p class="gratitude__name">ООО Восход</p>
+              <p class="gratitude__text">Офрмление сертификата</p>
+            </div>
+            <div class="gratitude__modal">
+              <img src="img/thanksletters/4.jpg" alt="Отзыв 4" title="Отзыв 4">
+            </div>
           </div>
         </div>
       </section>
