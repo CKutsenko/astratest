@@ -59,7 +59,7 @@ jQuery(document).ready(function($){
     infinite: true,
     arrows: true,
     dots: false,
-    slidesToShow: 2,
+    slidesToShow: 3,
     slidesToScroll: 1,
     centerPadding: '0',
     variableWidth: true
@@ -68,20 +68,20 @@ jQuery(document).ready(function($){
   $('.gratitude__link').click( function(e){
     e.preventDefault();
     $('body').css({"overflow":"hidden"});
-    $('.overlay').show();
-    $(this).closest('.gratitude__slide').find('.gratitude__modal').clone().appendTo($('.overlay'))
+    $('.gratitude-overlay').show();
+    $(this).closest('.gratitude__slide').find('.gratitude__modal').clone().appendTo($('.gratitude-overlay'))
     .show()
     .animate({opacity: 1}, 200);
   });
 
   /* Close the modal window */
-  $('.overlay').click( function(){
+  $('.gratitude-overlay').click( function(){
     $('body').css({"overflow":"auto"});
     $(this).find('.gratitude__modal')
       .animate({opacity: 0}, 200,
         function(){
           $(this).remove();
-          $('.overlay').fadeOut(400);
+          $('.gratitude-overlay').fadeOut(400);
         }
       );
   });
@@ -218,7 +218,7 @@ jQuery(document).ready(function($){
       infinite: true,
       arrows: true,
       dots: false,
-      slidesToShow: 2,
+      slidesToShow: 5,
       slidesToScroll: 1,
       centerMode: true,
       centerPadding: '0'

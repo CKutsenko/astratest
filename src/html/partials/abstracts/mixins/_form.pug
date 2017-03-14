@@ -3,7 +3,7 @@
 //- - var applicationMini = [{name: 'application-mini', id: 'formApplicationMini', title : 'Узнать стоимость', applicationMini: true, button: 'Узнать стоимость', success: 'Ваша заявка отправлена'}]
 - var question = [{name: 'question', id: 'formQuestion', question: true,  button: 'Получить консультацию', success: 'Ваш вопрос отправлен'}]
 - var call = [{name: 'call', id: 'formCall', title: 'Подскажем, что необходимо именно в Вашей ситуации', call: true, button: 'Узнать стоимость за 15 минут', success: 'Ваша заявка отправлена'}]
-- var review = [{name: 'review', id: 'formReview', title : 'Оставить отзыв', review: true, button: 'Оставить отзыв', success: 'Отзыв успешно оставлен'}]
+- var review = [{name: 'review', id: 'formReview', review: true, button: 'Оставить свой отзыв', success: 'Отзыв успешно оставлен'}]
 
 
 mixin form(items)
@@ -63,15 +63,13 @@ mixin form(items)
           //-   p.help-block.help-block-error Ошибка заполнения поля формы
 
         if item.review
-          .form-group.field-question-name.required.has-error
-            +e.INPUT.input(type='text', name='Компания', placeholder='Ваша компания*')
-            p.help-block.help-block-error Ошибка заполнения поля формы
-          .form-group.field-question-email.required.has-success
-            +e.INPUT.input(type='email', name='Email', placeholder='Контактный e-mail*')
+          .form-group.field-question-name.required
+            +e.INPUT.input(type='text', name='Компания и имя', placeholder='Ваше имя и название организации')
             p.help-block.help-block-error Ошибка заполнения поля формы
           .form-group.required
-            +e.TEXTAREA.textarea(type='text', name='Ваш отзыв', placeholder='Ваш отзыв*')
+            +e.TEXTAREA.textarea(type='text', name='Ваш отзыв', placeholder='Текст отзыва')
             p.help-block.help-block-error Ошибка заполнения поля формы
+            +b.BUTTON.btn--orange(type='submit') #{item.button}
 
 
 

@@ -98,3 +98,25 @@
     padding-bottom: 10px;
   }
 }
+
+.form--review {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  form {
+    flex: 0 0 60%;
+    @include mq($from:xs, $until:md){
+      flex: 0 0 100%;
+    }
+  }
+  .form__title {
+    display: none;
+  }
+  .field-question-name {
+    margin-bottom: 0;
+  }
+}
