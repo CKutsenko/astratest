@@ -220,7 +220,7 @@ jQuery(document).ready(function($){
       infinite: true,
       arrows: true,
       dots: false,
-      slidesToShow: 5,
+      slidesToShow: 2,
       slidesToScroll: 1,
       centerMode: true,
       centerPadding: '0'
