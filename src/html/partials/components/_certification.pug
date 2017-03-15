@@ -1,19 +1,17 @@
 include ../abstracts/mixins/_form.pug
 include ../abstracts/bemto/bemto.pug
 
-+b.SECTION.promo--article
++b.SECTION.page-header
   .container
-    +e.inner
-      +e.box--wide
-        +e.H1.title ТРЕБУЕТСЯ СЕРТИФИКАЦИЯ  ПРОДУКЦИИ?
-        +e.P.text--light At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
-      +e.box--short
-        +form(call)
+    +e.H2.title Большая статья про офрмление
 +b.ARTICLE.certification
   .container
     +e.inner
       +e.box
-        +e.H1.title Заголовок первого уровня
+        +b.breadcrumbs
+          +e.A.link(href="index.html") Главная
+          +e.A.link(href="index.html") Не главная
+          +e.SPAN.name Большая статья про офрмление
         +e.H2.subtitle Заговловок второго уровня
         +e.flex-inner
           +e.wrapper

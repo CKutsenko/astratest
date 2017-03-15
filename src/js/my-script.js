@@ -226,6 +226,38 @@ jQuery(document).ready(function($){
       centerPadding: '0'
     });
   }
+
+    if ($(window).width() <= 480) {
+    $('.reviews-page__wrapper').slick({
+      infinite: true,
+      arrows: false,
+      dots: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      centerMode: true,
+      centerPadding: '0'
+    });
+  } else if ($(window).width() <= 768) {
+    $('.reviews-page__wrapper').slick({
+      infinite: true,
+      arrows: true,
+      dots: false,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      centerMode: true,
+      centerPadding: '0'
+    });
+  } else {
+    $('.reviews-page__wrapper').slick({
+      infinite: true,
+      arrows: true,
+      dots: false,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      centerMode: true,
+      centerPadding: '0'
+    });
+  }
   /* Gratitude in the modal window */
   $('.reviews__link').click( function(e){
     e.preventDefault();

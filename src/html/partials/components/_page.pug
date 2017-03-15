@@ -8,6 +8,10 @@ include ../abstracts/bemto/bemto.pug
   .container
     +e.inner
       +e.box
+        +b.breadcrumbs
+          +e.A.link(href="index.html") Главная
+          +e.A.link(href="index.html") Не главная
+          +e.SPAN.name Большая статья про офрмление
         +e.H2.subtitle Заговловок второго уровня
         +e.flex-inner
           +e.wrapper

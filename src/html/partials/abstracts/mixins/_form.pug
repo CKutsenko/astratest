@@ -2,7 +2,7 @@
 - var application = [{name: 'application', id: 'formApplication', title : 'Узнать стоимость', application: true, button: 'Узнать стоимость', success: 'Ваша заявка отправлена'}]
 //- - var applicationMini = [{name: 'application-mini', id: 'formApplicationMini', title : 'Узнать стоимость', applicationMini: true, button: 'Узнать стоимость', success: 'Ваша заявка отправлена'}]
 - var question = [{name: 'question', id: 'formQuestion', question: true,  button: 'Получить консультацию', success: 'Ваш вопрос отправлен'}]
-- var call = [{name: 'call', id: 'formCall', title: 'Подскажем, что необходимо именно в Вашей ситуации', call: true, button: 'Узнать стоимость за 15 минут', success: 'Ваша заявка отправлена'}]
+- var call = [{name: 'call', id: 'formCall', title: 'Подскажем, что необходимо именно в Вашей ситуации', call: true, button: 'Узнать стоимость за 30 минут', success: 'Ваша заявка отправлена'}]
 - var review = [{name: 'review', id: 'formReview', review: true, button: 'Оставить свой отзыв', success: 'Отзыв успешно оставлен'}]
 
 
@@ -37,8 +37,12 @@ mixin form(items)
 
         if item.question
           .form-group.field-question-name.required
-            +e.INPUT.input(type='text', name='Имя', placeholder='Ваш телефон или e-mail')
+            +e.INPUT.input(type='tel', name='Телефон', placeholder='Ваш телефон')
             p.help-block.help-block-error Ошибка заполнения поля формы
+          .form-group.field-question-phone.required
+            +e.INPUT.input(type='email', name='e-mail', placeholder='Ваш e-mail')
+            p.help-block.help-block-error Ошибка заполнения поля формы
+          .form-group.field-question-name.required
             +e.TEXTAREA.textarea(type='text', name='Ваш вопрос', placeholder='Вопрос...')
             p.help-block.help-block-error Ошибка заполнения поля формы
             +b.BUTTON.btn--orange(type='submit') #{item.button}

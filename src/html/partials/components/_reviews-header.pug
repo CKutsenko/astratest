@@ -9,7 +9,7 @@ include ../abstracts/bemto/bemto.pug
     +e.H2.title Работали с нами?
       <br> Поделитесь своим впечатлением о нашей компании с другими
     +form(review)
-+b.SECTION.reviews--page
++b.SECTION.reviews-page
   .container
     +e.H2.title Отзывы
     +e.wrapper
@@ -31,15 +31,21 @@ include ../abstracts/bemto/bemto.pug
           +e.text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           +e.name ООО Восход
           +e.date 17.05.1
-    +e.pagination
-      +e.UL.list
-        +e.LI.item
-          +e.A.link(href="#") 1
-        +e.LI.item
-          +e.A.link(href="#") 2
-        +e.LI.item
-          +e.A.link--active(href="#") 3
-        +e.LI.item
-          +e.A.link(href="#") 4
-        +e.LI.item
-          +e.A.link(href="#") 5
+      +e.column
+        +e.slide
+          +e.text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad m
+          +e.name ООО Восход
+          +e.date 17.05.16
+        +e.slide
+          +e.text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          +e.name ООО Восход
+          +e.date 17.05.16
+      +e.column
+        +e.slide
+          +e.text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad m
+          +e.name ООО Восход
+          +e.date 17.05.16
+        +e.slide
+          +e.text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          +e.name ООО Восход
+          +e.date 17.05.1
