@@ -1,79 +1,140 @@
 .page{
-  margin-top: 60px;
-
-  @include mq($from:xs, $until:lg){
-    margin: 20px 0 0;
-  }
-
-  &__form{
-    flex: 0 0 50%;
-    @include mq($from:xs, $until:lg){
-      flex: 0 0 100%;
-    }
-
-    .form{
-      margin:0 20px; 
-      @include mq($from:xs, $until:lg){
-        margin:0 auto;
-      }           
-    }
-    .form-group{
-      flex: 0 0 50%;
-      @include mq($from:xs, $until:sm){
-        flex: 0 0 100%;
-        max-width: 240px;
-        margin: 0 auto 10px;
-      }
-    }
-    .btn--form{
-      margin-bottom: 30px;
-      &:before{
-        content: '';
-        display: inline-block;
-        vertical-align: middle;
-        margin-right: 10px;
-        @include sprite($s-icon-doc); 
-      }
-    }
-    .recaptcha{
-      flex: 0 0 100%;
-      position: relative;
-      top: -10px;
-      transform: scale(0.65);
-
-      @include mq($from:xs, $until:sm){
-        position: relative;
-        top: -5px;
-        left: -35px;
-        transform: scale(0.65);
-      }
-    }
-    .captcha{
-      margin-bottom: 0;   
-    }
-  }
-
-  &__inner{
+  padding-bottom: 30px;
+  .container {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
     display: flex;
-    flex-wrap: wrap; 
-    padding: 0 50px;
+    justify-content: center;
+  }
+  &__inner {
+    flex: 0 0 85%;
+    background-color: $white;
+    margin: -50px;
+    z-index: 1000;
+    padding: 20px 50px;
     @include mq($from:xs, $until:md){
-      padding: 0 20px;
-    }       
-  }
-  &__bottom{
-    flex: 0 0 100%;
-    padding: 0 50px;
-    background-image: url(../img/header-bg.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
-    outline: 1px solid $white;
-    outline-offset: -5px;
-    display: flex;
-    flex-wrap: nowrap;
-    @include mq($from:xs, $until:lg){
-      flex-wrap: wrap;
+      flex: 0 0 100%;
+      margin: 0;
+      padding: 0;
     }
+  }
+  &__flex-inner {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+  }
+  &__title {
+    font-size: 24px;
+    font-family: $font-family-semibold;
+    text-transform: uppercase;
+  }
+  &__subtitle {
+    font-size: 20px;
+    font-family: $font-family-semibold;
+    margin-bottom: 20px;
+  }
+  &__text {
+    text-align: left;
+    font-size: 16px;
+    margin: 0;
+    line-height: 1.6;
+  }
+  &__list {
+    text-align: left;
+    padding: 20px;
+  }
+  &__item {
+    padding: 3px 0;
+    color: #3f7bdd;
+    span {
+      color: $black;
+    }
+  }
+  &__blockquote {
+    font-size: 20px;
+    padding: 20px 10px;
+    font-style: italic;
+    position: relative;
+    &:before {
+      position: absolute;
+      content: '';
+       @include sprite($s-quote);
+       left: -20px;
+    }
+    &:after {
+      position: absolute;
+      content: '';
+      @include sprite($s-quote);
+      right: -20px;
+      transform: rotate(180deg);
+      bottom: -3px;
+    }
+  }
+  &__download {
+    margin: 55px 0;
+    display: inline-block;
+    color: $black;
+    text-decoration: underline;
+    position: relative;
+    &:before {
+      position: absolute;
+      content: '';
+      @include sprite($s-pdf4);
+      left: -80px;
+      top: -13px;
+    }
+  }
+}
+
+.docks-inner {
+  background-color: #f3f3f3;
+  text-align: left;
+  padding: 10px 30px;
+  flex: 0 0 50%;
+  margin-left: 20px;
+    @include mq($from:xs, $until:md){
+      display: none;
+    }
+  &__title {
+    font-family: $font-family-semibold;
+    margin-bottom: 18px;
+  }
+  &__list {
+    padding: 0;
+  }
+  &__item {
+    list-style-type: none;
+    padding: 5px 50px;
+    font-family: $font-family-semibold;
+    position: relative;
+    &:before {
+      position: absolute;
+      content: '';
+      @include sprite($s-mark);
+      left: 0px;
+    }
+  }
+}
+
+.page-header {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../img/article-bgr.jpg);
+  background-size: cover;
+  min-height: 200px;
+  color: $white;
+  &__title {
+    font-size: 24px;
+    font-family: $font-family-semibold;
+    text-transform: uppercase;
   }
 }
