@@ -6,6 +6,9 @@
   background-position: 50% 50%;
     @include mq($from:xs, $until:md){
       background-image: none;
+      padding-bottom: 0;
+      margin-bottom: 0;
+      text-align: center;
     }
   &__wrapper {
     display: -webkit-flex;
@@ -32,7 +35,8 @@
     position: relative;
     padding-left: 65px;
     @include mq($from:xs, $until:md){
-      padding-left: 10px;
+      padding: 15px 0;
+      margin: 10px 0 0;
     }
     &:before {
       position: absolute;
@@ -43,7 +47,7 @@
       bottom: 10px;
       left: 65px;
       @include mq($from:xs, $until:md){
-        left: 10px;
+        display: none;
       }
     }
   }
@@ -61,7 +65,8 @@
     padding-top: 100px;
     padding-left: 160px;
     @include mq($from:xs, $until:md){
-      padding: 10px;
+      padding: 0 10px;
+      margin: 0;
       text-align: center;
     }
   }
@@ -118,6 +123,9 @@
       }
     }
     &--fourth {
+      @include mq($from:xs, $until:md){
+        padding-bottom: 0;
+      }
       &:before {
         @include sprite($s-work4);
         top: -5%;

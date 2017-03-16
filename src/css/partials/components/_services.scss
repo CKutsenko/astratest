@@ -98,6 +98,9 @@
   }
   &__list{
     list-style-type: none;
+    @include mq($from:xs, $until:md){
+      margin: 0;
+    }
     &--production {
       flex: 0 0 30%;
     }

@@ -1,9 +1,14 @@
 .contacts{
   padding-top: 50px;
+  @include mq($from:xs, $until:md){
+    padding-top: 20px;
+  }
   &__title{
     text-align: center;
     font-size: $font-size-title;
-
+  @include mq($from:xs, $until:md){
+    margin: 5px 0;
+  }
   }
   &__map{
     height: 400px;
@@ -58,18 +63,18 @@
 
 .pin{
   background-color: #386c9e;
-  position: fixed;
-  right: 28%;
-  top: 70px;
+  position: absolute;
+  left: 240px;
+  top: 30px;
     @include mq($from:xs, $until:sm){
-      right: 0;
+      display: none;
     }
   &:after {
     position: relative;
     content: '';
   }
   &:before {
-    position: fixed;
+    position: absolute;
     content: '';
     height: 10px;
     width: 10px;
@@ -80,6 +85,7 @@
   &__wrapper {
     padding: 25px 80px 25px 20px;
     color: $white;
+    min-width: 250px;
   }
   &__title {
     text-transform: uppercase;

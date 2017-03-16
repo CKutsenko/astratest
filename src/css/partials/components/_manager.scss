@@ -4,6 +4,9 @@
   background-repeat: no-repeat;
   padding: 50px 0;
   position: relative;
+  @include mq($from:xs, $until:md){
+    padding: 20px 0;
+  }
   &:after {
     content: '';
     position: absolute;

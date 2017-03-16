@@ -27,6 +27,9 @@
   }
   .container {
     padding: 30px;
+    @include mq($from:xs, $until:md){
+    padding: 10px 30px;
+    }
   }
   &__title {
     font-size: 24px;

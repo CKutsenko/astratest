@@ -569,7 +569,8 @@ h1, h2, h3, h4, h5, h6 {
   .page__title {
     font-size: 24px;
     font-family: "nerissemibold", Arial, sans-serif;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    text-align: center; }
   .page__subtitle {
     font-size: 20px;
     font-family: "nerissemibold", Arial, sans-serif;
@@ -670,7 +671,8 @@ h1, h2, h3, h4, h5, h6 {
   .page-header__title {
     font-size: 24px;
     font-family: "nerissemibold", Arial, sans-serif;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    text-align: center; }
 
 .form {
   text-align: center; }
@@ -2234,14 +2236,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .pin {
   background-color: #386c9e;
-  position: fixed;
-  right: 28%;
-  top: 70px; }
+  position: absolute;
+  left: 240px;
+  top: 30px; }
   .pin:after {
     position: relative;
     content: ''; }
   .pin:before {
-    position: fixed;
+    position: absolute;
     content: '';
     height: 10px;
     width: 10px;
@@ -2250,7 +2252,8 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #386c9e; }
   .pin__wrapper {
     padding: 25px 80px 25px 20px;
-    color: #ffffff; }
+    color: #ffffff;
+    min-width: 250px; }
   .pin__title {
     text-transform: uppercase;
     font-size: 18px;
@@ -2324,7 +2327,8 @@ h1, h2, h3, h4, h5, h6 {
 .converter__title {
   font-size: 24px;
   font-family: "nerissemibold", Arial, sans-serif;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-align: center; }
 
 .converter__subtitle {
   text-align: center;
@@ -2849,6 +2853,8 @@ h1, h2, h3, h4, h5, h6 {
   .content--wide {
     margin: 20px;
     padding: 0 20px; }
+  .clients {
+    padding: 20px 30px; }
   .advantages__box {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%; }
@@ -2858,15 +2864,23 @@ h1, h2, h3, h4, h5, h6 {
   .reviews:after,
       .reviews-page:after {
     display: none; }
+  .reviews .container,
+      .reviews-page .container {
+    padding: 10px 30px; }
   .reviews--page .reviews__wrapper {
     -ms-flex-direction: column;
     flex-direction: column; }
   .reviews--page .reviews__wrapper .reviews__column {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%; }
+  .manager {
+    padding: 20px 0; }
   .promo {
     background-image: none;
-    background-color: #3e75a9; }
+    background-color: #3e75a9;
+    text-align: center; }
+  .promo button {
+    border: 2px solid #ffffff; }
   .promo__inner {
     -ms-flex-direction: column;
     flex-direction: column; }
@@ -2902,11 +2916,16 @@ h1, h2, h3, h4, h5, h6 {
   .services-type__wrapper--docks {
     -ms-flex-direction: column;
     flex-direction: column; }
+  .services-type__list {
+    margin: 0; }
   .services-page__form {
     width: calc(100% - 40px);
     margin: 0 20px; }
   .work {
-    background-image: none; }
+    background-image: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    text-align: center; }
   .work__wrapper {
     -ms-flex-direction: column;
     flex-direction: column; }
@@ -2914,14 +2933,16 @@ h1, h2, h3, h4, h5, h6 {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%; }
   .work__title {
-    padding-left: 10px; }
+    padding: 15px 0;
+    margin: 10px 0 0; }
   .work__title:before {
-    left: 10px; }
+    display: none; }
   .work__text {
     padding: 10px;
     font-size: 16px; }
   .work__list {
-    padding: 10px;
+    padding: 0 10px;
+    margin: 0;
     text-align: center; }
   .work__item {
     padding-bottom: 50px; }
@@ -2930,6 +2951,12 @@ h1, h2, h3, h4, h5, h6 {
   .work__item:after {
     left: 50%;
     top: 50%; }
+  .work__item--fourth {
+    padding-bottom: 0; }
+  .contacts {
+    padding-top: 20px; }
+  .contacts__title {
+    margin: 5px 0; }
   .converter__wrapper {
     -ms-flex-direction: column;
     flex-direction: column;
@@ -2993,7 +3020,7 @@ h1, h2, h3, h4, h5, h6 {
     -ms-flex-direction: column;
     flex-direction: column; }
   .pin {
-    right: 0; } }
+    display: none; } }
     @media (max-width: 63.99em) {
   .header {
     padding: 0 20px; }
@@ -3029,7 +3056,9 @@ h1, h2, h3, h4, h5, h6 {
   .nav__list {
     padding: 0;
     text-align: center;
-    margin: 0; }
+    margin: 0;
+    -ms-flex-pack: center;
+    justify-content: center; }
   .nav__item {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;

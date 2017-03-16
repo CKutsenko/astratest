@@ -3,7 +3,9 @@
   max-width: 100%;
   text-align: center;
   padding: 40px 30px;
-
+  @include mq($from:xs, $until:md){
+    padding: 20px 30px;
+  }
   &__title{
     margin: 20px 0;
     text-transform: uppercase;
